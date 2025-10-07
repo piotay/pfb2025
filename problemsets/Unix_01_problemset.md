@@ -29,7 +29,7 @@ useful commands
 
 ### Try these examples
 
-**The files you need later in this review are in our [github repository](https://github.com/prog4biol/pfb2024). There will be direction on how to retrieve them**
+**The files you need later in this review are in our [github repository](https://github.com/prog4biol/pfb2025). There will be direction on how to retrieve them**
 
 Let's go to a directory with a lot of files in it and list those files
 
@@ -76,7 +76,7 @@ Change directory to your home directory. You likely have permissions to write to
 ```
 cd ~
 
-curl -O https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/cuffdiff.txt
+curl -O https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/cuffdiff.txt
 ```
 Note '-O' is the letter O not the number Zero 0
 
@@ -165,10 +165,10 @@ Problem Set
 
 5. Navigate into this new directory called problemsets. Verify that you are in the correct directory by using `pwd`.
 
-6. Use `curl -O` to copy <https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/sequences.nt.fa> from the web into your problemsets directory. If `curl` is not available on your system, use `wget` as an alternative. (Note '-O' is the letter O not the number Zero 0)
+6. Use `curl -O` to copy <https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/sequences.nt.fa> from the web into your problemsets directory. If `curl` is not available on your system, use `wget` as an alternative. (Note '-O' is the letter O not the number Zero 0)
 
 7. Without using a text editor, use unix commands to find these qualities for the file `sequences.nt.fa`.
-  This file can be found here <https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/sequences.nt.fa>
+  This file can be found here <https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/sequences.nt.fa>
       - How many lines does this file contain?   
       - How many characters?    (Hint: check out the options of wc)
       - What is the first line of this file?    (Hint: read the man page of head)
@@ -177,7 +177,7 @@ Problem Set
 
 8. Rename `sequences.nt.fa` to `cancer_genes.fasta`. (Hint: read the man page for mv)
 
-9. If you haven't already, copy/download this remote file, cuffdiff.txt, to your problemset directory using `curl`. Here is the url you can use: <https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/cuffdiff.txt>. Use `-O` is the letter O not the number zero 0.
+9. If you haven't already, copy/download this remote file, cuffdiff.txt, to your problemset directory using `curl`. Here is the url you can use: <https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/cuffdiff.txt>. Use `-O` is the letter O not the number zero 0.
 
 
 
