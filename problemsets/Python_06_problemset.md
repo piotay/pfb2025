@@ -38,7 +38,7 @@ GAACTCCAAAAATGAAAACATAGTAGCAATCAAAGCATCCCACTATTTTTTGTCTCTCGTTTCATTAGCGTTGTAAATTA
   - also when you are done counting, calculate and report the GC content (G_count + C_count / total_nucleotides ).
 
 
-5. Write a script to do the following to [Python_06.txt](https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/Python_06.txt)
+5. Write a script to do the following to [Python_06.txt](https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/Python_06.txt)
    - Open and read the contents.  
    - Uppercase each line
    - Print each line to the STDOUT
@@ -48,7 +48,7 @@ GAACTCCAAAAATGAAAACATAGTAGCAATCAAAGCATCCCACTATTTTTTGTCTCTCGTTTCATTAGCGTTGTAAATTA
 
 
 
-7. Open and print the reverse complement of each sequence in [Python_06.seq.txt](https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/Python_06.seq.txt). Each line is the following format:    `seqName\tsequence\n.` Make sure to print the output in FASTA format including the sequence name and a note in the description that this is the reverse complement. Print to STDOUT and capture the output into a file with a command line redirect '>'. 
+7. Open and print the reverse complement of each sequence in [Python_06.seq.txt](https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/Python_06.seq.txt). Each line is the following format:    `seqName\tsequence\n.` Make sure to print the output in FASTA format including the sequence name and a note in the description that this is the reverse complement. Print to STDOUT and capture the output into a file with a command line redirect '>'. 
    - **Remember is is always a good idea to start with a test set for which you know the correct output.**
 
 8. FASTQ File Parsing:
@@ -77,7 +77,7 @@ Here are the quality value characters in left-to-right increasing order of quali
 
 ___  
 
-For this problem open the [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) file [Python_06.fastq](https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/Python_06.fastq) and read each line to calculate and report:  
+For this problem open the [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) file [Python_06.fastq](https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/Python_06.fastq) and read each line to calculate and report:  
     - total number of lines  
     - total number of sequence IDs  
     - total number of characters  
@@ -170,7 +170,7 @@ __Now do the same on the command line with `comm` command. You might need to `so
 Are you still committing your files as you go?
 
 ## Extra: Expand on the nucleotide composition exercise 
-  - get the raw file [Python_06.seq.txt](https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/Python_06.seq.txt)
+  - get the raw file [Python_06.seq.txt](https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/Python_06.seq.txt)
   - in a script, open this file
   - iterate over each line in this file (seqName\tsequence\n)
      - for each sequence:
