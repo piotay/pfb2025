@@ -1,10 +1,12 @@
-# Programming For Biology 2024
+# Programming For Biology 2025
 
 [programmingforbiology.org](http://programmingforbiology.org)
 
 __Instructors__  
 Simon Prochnik  
 Sofia Robb     
+Eric Ross
+Jessen Bredeson
 
 * [Big Picture](unix.md/#big-picture)
    * [Why?](unix.md/#why)
@@ -18,7 +20,7 @@ Sofia Robb
       * [OK. I've Logged in.  What Now?](unix.md/#ok-ive-logged-in--what-now)
       * [Command Line Prompt](unix.md/#command-line-prompt)
       * [Issuing Commands](unix.md/#issuing-commands)
-      * [command line Editing](unix.md/#command-line-editing)
+      * [Command Line Editing](unix.md/#command-line-editing)
       * [Wildcards](unix.md/#wildcards)
    * [Directories and how they are organized](unix.md/#directories-and-how-they-are-organized)
       * [Home Sweet Home (your home directory ~)](unix.md/#home-sweet-home-your-home-directory-)
@@ -93,7 +95,7 @@ Sofia Robb
       * [Numbers and Strings](pfb.md/#numbers-and-strings)
       * [Lists](pfb.md/#lists)
       * [Tuples](pfb.md/#tuples)
-      * [Dictionary](pfb.md/#dictionary)
+      * [Dictionaries](pfb.md/#dictionaries)
       * [Command line parameters: A Special Built-in List](pfb.md/#command-line-parameters-a-special-built-in-list)
       * [What kind of object am I working with?](pfb.md/#what-kind-of-object-am-i-working-with)
    * [<a href="problemsets/Python_01_problemset.md">Link to Python 1 Problem Set</a>](problemsets/Python_01_problemset.md)
@@ -165,7 +167,7 @@ Sofia Robb
       * [List Comprehension](pfb.md/#list-comprehension)
    * [<a href="problemsets/Python_04_problemset.md">Link to Python 4 Problem Set</a>](problemsets/Python_04_problemset.md)
 * [Python 5](pfb.md/#python-5)
-   * [Dictionaries](pfb.md/#dictionaries)
+   * [Dictionaries](pfb.md/#dictionaries-1)
       * [Creating a Dictionary](pfb.md/#creating-a-dictionary)
       * [Accessing Values in Dictionaries](pfb.md/#accessing-values-in-dictionaries)
       * [Changing Values in a Dictionary](pfb.md/#changing-values-in-a-dictionary)
@@ -177,12 +179,14 @@ Sofia Robb
       * [Sorting Dictionary Keys](pfb.md/#sorting-dictionary-keys)
       * [Dictionary Functions](pfb.md/#dictionary-functions)
       * [Dictionary Methods](pfb.md/#dictionary-methods)
+      * [Sorting a Dictionary by values in a for loop](pfb.md/#sorting-a-dictionary-by-values-in-a-for-loop)
    * [<a href="problemsets/Python_05_problemset.md">Link to Python 5 Problem Set</a>](problemsets/Python_05_problemset.md)
    * [Sets](pfb.md/#sets)
       * [Set Operators](pfb.md/#set-operators)
       * [Set Functions](pfb.md/#set-functions)
       * [Set Methods](pfb.md/#set-methods)
       * [Build a dictionary of NT counts using a set and loops](pfb.md/#build-a-dictionary-of-nt-counts-using-a-set-and-loops)
+   * [<a href="problemsets/Python_06_problemset.md">Link to Python 6 Problem Set</a>](problemsets/Python_06_problemset.md)
 * [Python 6](pfb.md/#python-6)
    * [I/O and Files](pfb.md/#io-and-files)
       * [Writing to the Screen](pfb.md/#writing-to-the-screen)
@@ -275,7 +279,7 @@ Sofia Robb
    * [<a href="problemsets/Python_11_problemset.md">Link to Python 11 Problem Set</a>](problemsets/Python_11_problemset.md)
 * [Workshops](workshops.md/#workshops)
    * [BioPython  -- Sofia Robb](workshops.md/#biopython-----sofia-robb)
-   * [NGS -- Anoja Perera](workshops.md/#ngs----anoja-perera)
+   * [NGS -- Anoja Perera and Jessen Bredeson](workshops.md/#ngs----anoja-perera-and-jessen-bredeson)
    * [Bioinformatics and Useful Tools -- Simon Prochnik](workshops.md/#bioinformatics-and-useful-tools----simon-prochnik)
    * [Genome Assembly -- Deb Triant](workshops.md/#genome-assembly----deb-triant)
    * [RNAseq -- Brian Haas](workshops.md/#rnaseq----brian-haas)

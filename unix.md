@@ -1,4 +1,4 @@
-# Programming For Biology 2024
+# Programming For Biology 2025
 [programmingforbiology.org](http://programmingforbiology.org)
 
 __Instructors__  
@@ -58,7 +58,7 @@ The Unix OS is complicated and there are always more things to learn about it. W
 ### Logging into Your Workstation
 
 
-Your workstation is an iMac. To log into it, provide your user name and password. Your username is 'pfb2024' and the password is 'pfb2024'
+Your workstation is an iMac. To log into it, provide your user name and password. Your username is 'pfb2025' and the password is 'pfb2025'
 
 ### Bringing up the command line 
 
@@ -1291,12 +1291,12 @@ Let's clone the course material.
 
 Let's do it!
 
-1. Go to our [PFB GitHub Repository](https://github.com/prog4biol/pfb2024)
+1. Go to our [PFB GitHub Repository](https://github.com/prog4biol/pfb2025)
 2. Click the 'Code' or 'Download' Button
-![Clone PFB2024](images/github-clone.png)
-3. Copy the URL: git@github.com:prog4biol/pfb2024.git
+![Clone PFB2025](images/github-clone.png)
+3. Copy the URL: git@github.com:prog4biol/pfb2025.git
 4. _Clone_ the repository to your local machine. On the command line use this command:  
-   `git clone git@github.com:prog4biol/pfb2024.git`
+   `git clone git@github.com:prog4biol/pfb2025.git`
 
 Now you have a copy of the course material on your computer!
 
