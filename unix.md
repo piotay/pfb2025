@@ -951,37 +951,37 @@ Where vi is a text only editor with keystroke only commands, VSCode allows for o
 
 [Documentation](https://code.visualstudio.com/docs)
 
-# Git for Beginners
+## Git for Beginners
 
 Git is a tool for managing files and versions of files. It is a _Version Control System_. It allows you to keep track of changes. You are going to be using Git to manage your course work and keep your copy of the lecture notes and files up to date. Git can help you do very complex task with files. We are going to keep it simple.
 
-## The Big Picture
+### The Big Picture
 
 A Version Control System is good for Collaborations, Storing Versions, Restoring Previous Versions, and Managing Backups.
 
-### Collaboration  
+#### Collaboration  
 
 Using a Version Control System makes it possible to edit a document with others without the fear of overwriting someone's changes, even if more than one person is working on the same part of the document. All the changes can be merged into one document. These documents are all stored one place.
 
-### Storing Versions
+#### Storing Versions
 
 A Version Control System allows you to save versions of your files and to attach notes to each version. Each save will contain information about the lines that were added or altered.
 
-### Restoring Previous Versions  
+#### Restoring Previous Versions  
 
 Since you are keeping track of versions, it is possible to revert all the files in a project or just one file to a previous version.
 
-### Backup  
+#### Backup  
 
 A Version Control System makes it so that you work locally and sync your work remotely. This means you will have a copy of your project on your computer and the Version Control System Server you are using.
 
-### The Details
+#### The Details
 
 git is the Version Control System we will be using for tracking changes in our files.
 
 [GitHub](https://github.com/) is the Version Control System Server we will be using. They provide free account for all public projects.
 
-## The Basics
+### The Basics
 
 Usually you have a local copy of your project/repository and a remote copy. The __local__ repository is stored on your computer and the __remote__ is on a online service like GitHub.
 
@@ -989,7 +989,7 @@ Usually you have a local copy of your project/repository and a remote copy. The 
 
 You can use a web browser to interact with the remote server (gitHub) and the terminal to interact with the local repository.
 
-## SSH Keys
+### SSH Keys
 
 SSH Keys are needed to write to a personal repository. Lets set this up first
 
@@ -997,11 +997,11 @@ Github requires authentication with the use of ssh keys. Essentially, our github
 
  [Here is a great GitHub Tutoral](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
-## Adding a new SSH key to your GitHub account
+### Adding a new SSH key to your GitHub account
 
  Here is a summary of the steps:
 
-## Generating a new SSH KEY
+### Generating a new SSH KEY
 
 Make your key and add your email address.
 
@@ -1022,7 +1022,7 @@ Next, pick a passphrase, something easy. It is a password, so that not just anyo
 > Enter same passphrase again: [Type passphrase again]
 ```
 
-### Adding your SSH key to the ssh-agent
+#### Adding your SSH key to the ssh-agent
 
  ```
  $ eval "$(ssh-agent -s)"
@@ -1049,7 +1049,7 @@ Host *
   IdentityFile ~/.ssh/id_ed25519
 ```
 
-## Adding a new SSH key to your GitHub account
+### Adding a new SSH key to your GitHub account
 
 Print the contents of your PUBLIC ssh key file (our lock) and paste them into your github account
 
@@ -1057,7 +1057,7 @@ Print the contents of your PUBLIC ssh key file (our lock) and paste them into yo
 cat  ~/.ssh/id_ed25519.pub
 ```
 
-## Paste into your GitHub account
+### Paste into your GitHub account
 
 1. Go to Settings
 
@@ -1074,14 +1074,14 @@ cat  ~/.ssh/id_ed25519.pub
 5. Click "Add SSH Key"
 ![Click Add](images/github-ssh-add-key.png)
 
-## Do this to ensure that you do not encounter errors by attemping to add files that are too large
+### Do this to ensure that you do not encounter errors by attemping to add files that are too large
 
 ```
 cd ~/PFB_problemsets/.git/hooks/
 curl -O https://raw.githubusercontent.com/prog4biol/pfb2025/master/setup/pre-commit
 ```
 
-## Creating a new repository
+### Creating a new repository
 
 A repository is a project that contains all of the project files, and stores each file's revision history. Repositories can have multiple collaborators. Repositories usually have two components, one __remote__ and one __local__.
 
@@ -1154,7 +1154,7 @@ __Now we will add some files to your new repository:__
 
 That is all there is to it! There are more complicated things you can do, but we won't get into those. You will know when you are ready to learn more about git when you figure out there is something you want to do but don't know how. There are thousands of online tutorials for you to search and follow.
 
-### Keeping track of differences between local and remote repositories
+#### Keeping track of differences between local and remote repositories
 
 If you are ever wondering what do you need to add to your remote repository use the `git status` command. This will provide you with a list of files that have been modified, deleted, and those that are untracked. Untracked files are those that have never been added to the staging area with `git add`
 
@@ -1162,7 +1162,7 @@ If you are ever wondering what do you need to add to your remote repository use 
 | --------------------------------------- | ---------------------------------------- |
 | `git status` | To see a list of files that have been modified, deleted, and those that are untracked |
 
-### Deleting and moving files
+#### Deleting and moving files
 
 |command | description |
 | ------ |-------------|
@@ -1181,13 +1181,13 @@ git checkout <filename>
 
 > Whew, what a life saver!  
 
-### Tips
+#### Tips
 
 1. Adding files over 50M will break your git repo. Don't add large files. Don't blindly use `git add -A` when there might be large files present. You will be very sad if you do.  
 2. Don't clone a git repository into another git repository. This makes git really unhappy.
 3. Don't be afraid to ask your questions on Google. git can be complicated and a lot of people ask a lot of questions that get answered in online forums, or GitHub will have a tutorial
 
-## Cloning a Repository
+### Cloning a Repository
 
 Sometimes you want to download and use someone else's repository. This is different from above where we created our own repository. This is just a copy of someone else's repository
 
@@ -1204,7 +1204,7 @@ Let's do it!
 
 Now you have a copy of the course material on your computer!
 
-### Bringing Changes in from the Remote Repository to your Local Repository
+#### Bringing Changes in from the Remote Repository to your Local Repository
 
 If changes are made to any of these files in the online, remote repository, and you want to update your local copy, you can _pull_ the changes.
 `git pull`  
@@ -1213,7 +1213,7 @@ If changes are made to any of these files in the online, remote repository, and 
 | --------------------------------------- | ---------------------------------------- |
 | `git pull` | To get changes from the remote into your local copy|
 
-## Links to _slightly_ less basic topics  
+### Links to _slightly_ less basic topics  
 
 You will KNOW if you need to use these features of git.
 
@@ -1223,6 +1223,6 @@ You will KNOW if you need to use these features of git.
 
 ---
 
-## [Link To Unix 2 Problem Set](problemsets/Unix_02_problemset.md)
+### [Link To Unix 2 Problem Set](problemsets/Unix_02_problemset.md)
 
 ---
