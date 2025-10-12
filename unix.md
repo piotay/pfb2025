@@ -2,8 +2,10 @@
 [programmingforbiology.org](http://programmingforbiology.org)
 
 __Instructors__  
-Simon Prochnik  
-Sofia Robb     
+Simon Prochnik
+Sofia Robb
+Eric Ross
+Jessen Bredeson  
 
 # Big Picture
 
