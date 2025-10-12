@@ -1162,6 +1162,11 @@ $ cat  ~/.ssh/id_ed25519.pub
 
 
 
+## Do this to ensure that you do not encounter errors by attemping to add files that are too large
+```
+cd ~/PFB_problemsets/.git/hooks/
+curl -O https://raw.githubusercontent.com/prog4biol/pfb2025/master/setup/pre-commit
+```
 
 ## Creating a new repository 
 
