@@ -58,7 +58,7 @@ The Unix OS is complicated and there are always more things to learn about it. W
 ### Logging into Your Workstation
 
 
-Your workstation is an iMac. To log into it, provide your user name and password. Your username is 'pfb2025' and the password is 'pfb2025'
+Your workstation is an iMac. To log into it, provide your user name and password. Your username is 'pfb' and the password is 'pfb2025'
 
 ### Bringing up the command line 
 
