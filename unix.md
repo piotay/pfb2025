@@ -922,9 +922,9 @@ Remember to enter into __Command Mode__ with `<esc>` key
 
 ![mug_vi_detailed](images/mug_vi_detailed.jpg)
 
-# Visual Studio Code
+## Visual Studio Code
 
-## What is VSCode
+### What is VSCode
 
 - IDE (Integrated Development Environment).
 - Owned by Microsoft, but “free”.
@@ -934,17 +934,17 @@ Remember to enter into __Command Mode__ with `<esc>` key
   - Integration with git.
   - Integration with AI coding tools.
 
-## VSCode interface
+### VSCode interface
 
 ![vscode_interface](images/vscode.jpg)
 
-## How Does VSCode Work
+### How Does VSCode Work
 
 - Works like Word or other Text editor (copy, paste, undo etc).
 - Formats and colors code in a language specific way.
 - Saves text files that can be opened as any other text file.
 
-## Documentation
+### Documentation
 
 [Documentation](https://code.visualstudio.com/docs)
 
