@@ -4,9 +4,9 @@
 
 __Instructors__  
 Simon Prochnik  
-Sofia Robb     
+Sofia Robb    
 Eric Ross  
-Jessen Bredeson
+Jessen Bredeson  
 
 * [Big Picture](unix.md/#big-picture)
    * [Why?](unix.md/#why)
@@ -54,8 +54,13 @@ Jessen Bredeson
       * [Common Activities and vi Commands](unix.md/#common-activities-and-vi-commands)
       * [Other Useful Tips](unix.md/#other-useful-tips)
       * [Mug of vi](unix.md/#mug-of-vi)
+   * [Visual Studio Code](unix.md/#visual-studio-code)
+      * [What is VSCode](unix.md/#what-is-vscode)
+      * [VSCode interface](unix.md/#vscode-interface)
+      * [How Does VSCode Work](unix.md/#how-does-vscode-work)
+      * [Documentation](unix.md/#documentation)
 * [Git for Beginners](unix.md/#git-for-beginners)
-   * [The Big Picture.](unix.md/#the-big-picture)
+   * [The Big Picture](unix.md/#the-big-picture)
       * [Collaboration](unix.md/#collaboration)
       * [Storing Versions](unix.md/#storing-versions)
       * [Restoring Previous Versions](unix.md/#restoring-previous-versions)
@@ -68,6 +73,7 @@ Jessen Bredeson
       * [Adding your SSH key to the ssh-agent](unix.md/#adding-your-ssh-key-to-the-ssh-agent)
    * [Adding a new SSH key to your GitHub account](unix.md/#adding-a-new-ssh-key-to-your-github-account-1)
    * [Paste into your GitHub account](unix.md/#paste-into-your-github-account)
+   * [Do this to ensure that you do not encounter errors by attemping to add files that are too large](unix.md/#do-this-to-ensure-that-you-do-not-encounter-errors-by-attemping-to-add-files-that-are-too-large)
    * [Creating a new repository](unix.md/#creating-a-new-repository)
       * [Keeping track of differences between local and remote repositories](unix.md/#keeping-track-of-differences-between-local-and-remote-repositories)
       * [Deleting and moving files](unix.md/#deleting-and-moving-files)
@@ -278,13 +284,7 @@ Jessen Bredeson
          * [<strong>__init__</strong>](pfb.md/#__init__)
    * [<a href="problemsets/Python_11_problemset.md">Link to Python 11 Problem Set</a>](problemsets/Python_11_problemset.md)
 * [Workshops](workshops.md/#workshops)
-   * [BioPython  -- Sofia Robb](workshops.md/#biopython-----sofia-robb)
-   * [NGS -- Anoja Perera and Jessen Bredeson](workshops.md/#ngs----anoja-perera-and-jessen-bredeson)
-   * [Bioinformatics and Useful Tools -- Simon Prochnik](workshops.md/#bioinformatics-and-useful-tools----simon-prochnik)
-   * [Genome Assembly -- Deb Triant](workshops.md/#genome-assembly----deb-triant)
-   * [RNAseq -- Brian Haas](workshops.md/#rnaseq----brian-haas)
-   * [Protein Function Annotation -- Paul Thomas](workshops.md/#protein-function-annotation----paul-thomas)
-   * [GMOD -- Scott Cain](workshops.md/#gmod----scott-cain)
-   * [Image Processing -- Jay Unruh](workshops.md/#image-processing----jay-unruh)
-   * [Sequence Homology -- Bill Pearson](workshops.md/#sequence-homology----bill-pearson)
    * [Ethics and Responsibility in Bioinformatics -- Simon Prochnik](workshops.md/#ethics-and-responsibility-in-bioinformatics----simon-prochnik)
+   * [Coding with AI -- Simon](workshops.md/#coding-with-ai----simon)
+   * [RNAseq -- Brian Haas](workshops.md/#rnaseq----brian-haas)
+   * [Protein Homology -- Bill Pearson](workshops.md/#protein-homology----bill-pearson)

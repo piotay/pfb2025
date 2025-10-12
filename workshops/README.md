@@ -17,8 +17,6 @@ Sofia Robb
   - [Lecture](https://github.com/trinityrnaseq/CSHLProgForBio/blob/main/rnaseq_slides_PFB2023.pdf)
   - [Workshop](RNAseq)
 
-## Protein Function Annotation -- Paul Thomas
-  - [Lecture](Protein_Function_Annotation/CSHL2023-function-and-enrichment.pdf)
-  - [Workshop](Protein_Function_Annotation)
-
-
+## Protein Homology -- Bill Pearson
+  - [Lecture]()
+  - [Workshop]()
