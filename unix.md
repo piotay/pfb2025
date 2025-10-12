@@ -926,6 +926,8 @@ Remember to enter into __Command Mode__ with `<esc>` key
 
 ### What is VSCode
 
+Where vi is a text only editor with keystroke only commands, VSCode allows for on screen mouse interactions. vi is installed by default on all linux servers, VSCode needs to be installed and set up on each of your computers and can be used to edit files remotely. 
+
 - IDE (Integrated Development Environment).
 - Owned by Microsoft, but “free”.
 - Can be used for many programming languages.
@@ -933,6 +935,7 @@ Remember to enter into __Command Mode__ with `<esc>` key
   - Integration with ssh.
   - Integration with git.
   - Integration with AI coding tools.
+
 
 ### VSCode interface
 
