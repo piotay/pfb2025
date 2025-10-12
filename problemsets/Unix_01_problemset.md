@@ -1,7 +1,8 @@
 # Unix Basics Quick Review and Problem Set
 
-short reference list of useful commands:
-=========================
+
+
+## Short Reference List of Useful commands:
 
 | command         | description                              |
 | --------------- | ---------------------------------------- |
@@ -161,9 +162,9 @@ Problem Set
     - How many files does it contain?
     - How many directories?
 
-4. Make a directory called `PFB_problemsets` in your home directory.
+4. Make a directory called `PFB_problemsets` in your **home directory**.
 
-5. Navigate into this new directory called problemsets. Verify that you are in the correct directory by using `pwd`.
+5. Navigate into this new directory called problemsets. **Verify** that you are in the correct directory by using `pwd`.
 
 6. Use `curl -O` to copy <https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/sequences.nt.fa> from the web into your problemsets directory. If `curl` is not available on your system, use `wget` as an alternative. (Note '-O' is the letter O not the number Zero 0)
 
