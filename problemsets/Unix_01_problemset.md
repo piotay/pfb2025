@@ -1,6 +1,6 @@
 # Unix Basics Quick Review and Problem Set
 
-useful commands
+short reference list of useful commands:
 =========================
 
 | command         | description                              |
