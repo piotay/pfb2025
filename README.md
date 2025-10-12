@@ -5,7 +5,7 @@
 __Instructors__  
 Simon Prochnik  
 Sofia Robb     
-Eric Ross
+Eric Ross  
 Jessen Bredeson
 
 * [Big Picture](unix.md/#big-picture)
