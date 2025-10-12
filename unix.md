@@ -37,6 +37,8 @@ What are our tips for having a successful programming course?
 
 ---
 
+
+
 # Unix 1
 
 ## Unix Overview
