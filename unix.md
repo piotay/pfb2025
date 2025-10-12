@@ -38,6 +38,7 @@ What are our tips for having a successful programming course?
 7. Our key goal is to slowly, but surely, teach you how to solve problems on your own.
 
 ---
+<div class="page-break"></div>  
 
 # Unix 1
 
@@ -753,6 +754,8 @@ Here are a few more advanced Unix commands that are very useful, and when you ha
 
 
 ---
+<div class="page-break"></div>    
+
 # Unix 2
 
 
