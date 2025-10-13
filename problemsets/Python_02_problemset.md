@@ -17,7 +17,7 @@ D. In the interpretor use `bool` to test a variety of values like `''`, `0`, `0.
 
 E. __Quit Interpreter__
 
-### Part 2: Use Text Editor
+### Part 2: Use Text Editor (VSCODE or vi)
 
 1. Using a **text editor** (not the interperter), write a script that 
     - Assigns a value to a variable
