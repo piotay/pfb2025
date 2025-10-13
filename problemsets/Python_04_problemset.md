@@ -16,7 +16,7 @@ Python 4 Problem Set -- Lists and Loops
 	l.  Use `join` to create a string. Join the elements on ', '  
 	m. **Exit the interpreter**
 	
-2. List manipulation: Create a new **script in vi**   
+2. List manipulation: Create a new **script using a text editor**   
     a. In the script, create a variable called `taxa_string` that contains this string:  `"sapiens : erectus : neanderthalensis"`  
     b. Print `taxa_string`  
     c. Split `taxa_string` into a list called `taxa_list`. Use `" : "` as your separator.  
@@ -41,7 +41,7 @@ Python 4 Problem Set -- Lists and Loops
      - Print the original list again `print(my_list2)`
      - **close the interpreter** 
 
-4. While loops: **Write a script with vi**.
+4. While loops: **Write a script with a text editor**.
    -  Use a `while` loop to print out the numbers 1 to 100.
    -  After you correctly print out each number in the body of the while loop, add in a variable, `sum` that is used to keep a running sum of each number.
    -  Outside the while loop print the total sum of all numbers 1 to 100.
