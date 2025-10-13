@@ -627,7 +627,7 @@ The series of characters at the beginning of the line describe the permissions. 
 - `l`: link
 - `-`: file
 
-Then there are three triples of characters (- means not allowed, a letter means you have read, write, exectute permission). x for a directory means you can access the directory
+Then there are three triples of characters (- means not allowed, a letter means you have read, write, execute permission). x for a directory means you can access the directory
 
 ```
 rwx
@@ -666,7 +666,7 @@ dbrown@WideIsLove ~ % ls -l print.py
 -rwxr-x---  1 dbrown  staff  23 Oct 16 13:37 print.py
 ```
 
-To convert a script into an exectuable program, you'll need to make it executable with `chmod` and then add the current directory to your `$PATH` (we'll see how to do this later) for you, you can type the command in your terminal window.
+To convert a script into an executable program, you'll need to make it executable with `chmod` and then add the current directory to your `$PATH` (we'll see how to do this later) for you, you can type the command in your terminal window.
 
 ```
 export PATH=".:${PATH}" # add '.', the current dir to the list of paths
@@ -700,7 +700,7 @@ Here are a few more advanced Unix commands that are very useful, and when you ha
 
 - `awk` (Linux Phrasebook p.194-198) [online tutorial](https://www.tutorialspoint.com/awk/index.htm)
 - `sed` (Linux Phrasebook p.188-194) [online tutorial](https://www.tutorialspoint.com/sed/index.htm)
-- `perl` one-liners [online tutoral](https://catonmat.net/introduction-to-perl-one-liners)
+- `perl` one-liners [online tutorial](https://catonmat.net/introduction-to-perl-one-liners)
 - `for` loops [online tutorial](https://www.tutorialspoint.com/unix/for-loop.htm)
 
 ---
@@ -914,7 +914,7 @@ Remember to enter into __Command Mode__ with `<esc>` key
 | `:set number` | display line numbers |
 | `:set nonumber` | turn off line numbers |  
 | `:/[search text]` | find [this text] in your file |  
-| `n` | go to next occurance of your search result |
+| `n` | go to next occurrence of your search result |
 
 ### Mug of vi
 
@@ -995,7 +995,7 @@ SSH Keys are needed to write to a personal repository. Lets set this up first
 
 Github requires authentication with the use of ssh keys. Essentially, our github repos are LOCKED, we need a KEY to write to them. We will generate the a key (private) and a lock (public). Then We tell github about our lock and keep our key to ourselves.
 
- [Here is a great GitHub Tutoral](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+ [Here is a great GitHub Tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 ### Adding a new SSH key to your GitHub account
 
@@ -1074,7 +1074,7 @@ cat  ~/.ssh/id_ed25519.pub
 5. Click "Add SSH Key"
 ![Click Add](images/github-ssh-add-key.png)
 
-### Do this to ensure that you do not encounter errors by attemping to add files that are too large
+### Do this to ensure that you do not encounter errors by attempting to add files that are too large
 
 ```
 cd ~/PFB_problemsets/.git/hooks/

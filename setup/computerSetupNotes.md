@@ -7,15 +7,15 @@
 
 ## CSHL IT setup
 - 1 computer per student
-- 1 instrutor computer
+- 1 instructor computer
 - 2 TA computers
 - small monitor imacs
 - students work on local machines
 - admin and student (non-admin) separate accounts
 - IT install
-   - iterm 
+   - iTerm 
    - xcode
-   - clean up task bar, only keep, terminal and/or iterm, browser.
+   - clean up task bar, only keep, terminal and/or iTerm, browser.
 - remote control package for student computer management (if possible)
 - run MacOS updates on machines
 
