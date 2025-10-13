@@ -103,7 +103,7 @@ ATTCTTGGCCTTAAATTGGCCTTG
 7. ADD/COMMIT/PUSH `mysequences.txt` to your remote.
 
 
-8. Create a directory called `fastas`.     (Hint: use mkdir)
+8. Create a directory called `fastas` inside your problem_sets directory.     (Hint: use mkdir)
 9. Copy the fasta file that you renamed to `cancer_genes.fasta` to the fasta directory.
 10. Verify that the file is within the fasta directory.  
 11. Delete the the original file that you used for copying.  
