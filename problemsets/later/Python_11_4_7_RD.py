@@ -5,15 +5,15 @@
 4. - 7.
 
 4. Sequence length method
-a. Add a method to your class that caclulates and returns the length of the sequence.
+a. Add a method to your class that calculates and returns the length of the sequence.
 b. Write some some lines of code, outside your class (in your main program) that gets and prints the sequence length using your new method
 
 5. Nucleotide composition method
-a. Add in a method that caclulates and returns the nucleotide composition.
+a. Add in a method that calculates and returns the nucleotide composition.
 b. Write some some lines of code, outside your class (in your main program) that gets and prints the sequence nucleotide compositio using your new method
 
 6. GC content method
-a. Add in a method that caclulates and returns the GC content.
+a. Add in a method that calculates and returns the GC content.
 b. Write some some lines of code, outside your class (in your main program) that gets and prints the sequence GC content using your new method
 
 7. FASTA Formatter method
@@ -22,7 +22,7 @@ b. Write some some lines of code, outside your class (in your main program) that
 
         Challenge Question
 
-1. Create a method that can compare two DNA Sequence records and returns True if they are the same or False if they are differet. Sameness is based on name, organism, and seqeunce. All need to be the same for two objects to be considered the same
+1. Create a method that can compare two DNA Sequence records and returns True if they are the same or False if they are different. Sameness is based on name, organism, and sequence. All need to be the same for two objects to be considered the same
 '''
 class DNAsequence(object):
 

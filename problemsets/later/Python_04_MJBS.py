@@ -27,7 +27,7 @@ favThings.insert(0, "Sciencing")
 
 	#1.8 Add a new element somewhere other than the beginning or the end.
 favThings.insert(4, "Loving")
-print("I just added a bunch of things at the beggining, end and somewhere 4:", favThings)
+print("I just added a bunch of things at the beginning, end and somewhere 4:", favThings)
 
 	#1.9 Remove an element from the end.
 favThings.pop()
@@ -160,7 +160,7 @@ for seq in nva:
 for seq in nva:
 	print(len(seq), seq, sep = "\t")
 	
-	#11.3 Modify this script to also also print out the number (postion in the list) of each sequence. Make sure your columns are tab separated (i.e., "1\t4\tACGT\n")
+	#11.3 Modify this script to also also print out the number (position in the list) of each sequence. Make sure your columns are tab separated (i.e., "1\t4\tACGT\n")
 n = 0
 #print(nva[0]) 
 for n in range(0, len(nva)):
@@ -170,6 +170,6 @@ for n in range(0, len(nva)):
 	print(len(seq), nva[n], n, sep = "\t")
 	n = n + 1
 
-#12 Write a new script tht uses list comprehension to generate a list of tuples. The tuples should contain sequences and lengths from the previous problem. Print out the length and the sequence (i.e., "4\tATGC\n"). A list of tuples looks like this [(4,'ATGC'),(2,'GC')].
+#12 Write a new script that uses list comprehension to generate a list of tuples. The tuples should contain sequences and lengths from the previous problem. Print out the length and the sequence (i.e., "4\tATGC\n"). A list of tuples looks like this [(4,'ATGC'),(2,'GC')].
 loft = [(n, nva[n]) for n in range(0, len(nva))]
 print(loft)

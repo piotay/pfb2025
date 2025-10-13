@@ -235,7 +235,7 @@ for item in DNAtuple:
 	print ("{}\t{}".format(item[0], item[1]))
 ```
 # Problem 13 
-Modify the script from #11 so that you also print out the number (postion in the list) of each sequence (i.e., "1\t4\tACGT\n")
+Modify the script from #11 so that you also print out the number (position in the list) of each sequence (i.e., "1\t4\tACGT\n")
 ```
 DNAtuple = [(len(element), element) for element in elements]
 counter = 1
@@ -244,7 +244,7 @@ for item in DNAtuple:
 	counter += 1
 ```
 # Problem 14 
-Have you been commiting you work?
+Have you been committing you work?
 
 # Fun challenge problems! These are real script is you might use in real life. You have already learned all you need to know to do each. If you don't have enough time in this session to complete, come back and try later.
 
@@ -311,7 +311,7 @@ A new Restriction Fragments script:
 - split the new formatted sequence on the cut sites, store the resulting fragments in a list
 - iterate over each fragment and report
 - the start position in the original sequence
-- the end postion in the orginal sequence
+- the end position in the original sequence
 - the length of each fragemnt
 - sort the fragments by length and print out as they would appear on a agrose gel. (big to little)
 ```

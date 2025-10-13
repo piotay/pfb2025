@@ -65,7 +65,7 @@ for seq_id in seq_dict:
     frags_list = new_sequence.split("^")
     frags_len = [len(x) for x in frags_list]          ## get the lengths of the fragments with a list comprehension
     f_len_s = sorted(frags_len)                       ## sort the lengths by size
-    ind = [frags_len.index(x) for x in f_len_s][::-1] ## reverse the list smalles to largest and retrieve the index for each value
+    ind = [frags_len.index(x) for x in f_len_s][::-1] ## reverse the list smallest to largest and retrieve the index for each value
     [print(frags_list[x]) for x in ind]               ## print the fragments according to their length index
     
     

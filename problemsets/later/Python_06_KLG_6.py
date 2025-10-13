@@ -132,7 +132,7 @@ print(len(alpaca_sc_genes & alpaca_tf_genes))
 
 # __Now do the same on the command line with `comm` command. You might need to `sort` each file first.__
 
-## firt pull out the first column of the file and sort it for both files
+## first pull out the first column of the file and sort it for both files
 #cut -f 1 alpaca_stemcellproliferation_genes.tsv | sort >alpaca_stemcellproliferation_genes.sorted.tsv
 #cut -f 1 alpaca_transcriptionFactors.tsv | sort >alpaca_transcriptionFactors.sorted.tsv
 

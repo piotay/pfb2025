@@ -7,18 +7,18 @@ import re
 ## HERE I DEFINE CLASSES ##
 #defining a class DNAsequence
 class DNAsequence(object):
-    #1 define class atributes
+    #1 define class attributes
     def __init__(self,sequence,name,organism):
         self.sequence = sequence
         self.genename = name
         self.origin = organism
 # 4 Sequence length method
-# 4a. Add a method to your class that caclulates and returns the length of the sequence.
+# 4a. Add a method to your class that calculates and returns the length of the sequence.
     def Seq_length(self):
         length_seq = len(self.sequence)
         return length_seq
 #5 Nucleotide composition method
-# 5a. Add in a method that caclulates and returns the nucleotide composition.
+# 5a. Add in a method that calculates and returns the nucleotide composition.
     def Nucleotide_composition(self):
         sequp = self.sequence.upper()
         length_seq = self.Seq_length()
@@ -28,7 +28,7 @@ class DNAsequence(object):
         composition_G = sequp.count('G')/length_seq
         return [composition_A, composition_C, composition_G, composition_T]
 # 6 GC content method
-# 6a. Add in a method that caclulates and returns the GC content.
+# 6a. Add in a method that calculates and returns the GC content.
     def GCcontent(self):
         list_of_composition = self.Nucleotide_composition()
         compoC = list_of_composition[1]

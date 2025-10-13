@@ -1285,7 +1285,7 @@
               >
                 Sign up
               </a>
-          <button type="button" class="sr-only js-header-menu-focus-trap d-block d-lg-none">Reseting focus</button>
+          <button type="button" class="sr-only js-header-menu-focus-trap d-block d-lg-none">Resetting focus</button>
         </div>
       </div>
     </div>

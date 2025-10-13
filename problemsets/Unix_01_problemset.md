@@ -143,7 +143,7 @@ cat fav_chr_cuffdiff.txt blablabla.file > out.txt 2> err.txt
 
 
 ```
-> Examine the contents of `out.txt` and `err.txt`. REMEMBER you can use your text editor to open and look at the contents of any file. A text file can have any extention that you want it to have. It does not have to end in .txt, it can be .fa .fasta .nt .trash .anything .nothing
+> Examine the contents of `out.txt` and `err.txt`. REMEMBER you can use your text editor to open and look at the contents of any file. A text file can have any extension that you want it to have. It does not have to end in .txt, it can be .fa .fasta .nt .trash .anything .nothing
 
 You can also redirect both STDOUT and STDERR to **the same** file.
 ```
@@ -194,8 +194,8 @@ __Cuffdiff file format__
 
 | Column number | Column name       | Example              | Description                              |
 | ------------- | ----------------- | -------------------- | ---------------------------------------- |
-| 1             | Tested id         | XLOC_000001          | A unique identifier describing the transcipt, gene, primary transcript, or CDS being tested |
-| 2             | Tested id         | XLOC_000001          | A unique identifier describing the transcipt, gene, primary transcript, or CDS being tested |
+| 1             | Tested id         | XLOC_000001          | A unique identifier describing the transcript, gene, primary transcript, or CDS being tested |
+| 2             | Tested id         | XLOC_000001          | A unique identifier describing the transcript, gene, primary transcript, or CDS being tested |
 | 3             | gene              | Lypla1               | The gene_name(s) or gene_id(s) being tested |
 | 4             | locus             | chr1:4797771-4835363 | Genomic coordinates for easy browsing to the genes or transcripts being tested. |
 | 5             | sample 1          | Liver                | Label (or number if no labels provided) of the first sample being tested |

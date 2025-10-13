@@ -15,7 +15,7 @@ fasta  = sys.argv[1]
 
 rtn    = subprocess.run(['grep', ">", fasta], stdout=subprocess.PIPE, check = True)  # specify you want to capture STDOUT
 
-## if the previos command works, continue on
+## if the previous command works, continue on
 if rtn.returncode == 0:
 
     ## count the number of FASTA records

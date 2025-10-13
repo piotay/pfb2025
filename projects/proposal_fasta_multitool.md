@@ -18,17 +18,17 @@ L50: 5
 GC%: 55%
 ```
 
-2. Reverse complement: provide a FASTA file and return FASTA formated output containing the reverse complement of all sequences contained in the input FASTA.
+2. Reverse complement: provide a FASTA file and return FASTA formatted output containing the reverse complement of all sequences contained in the input FASTA.
 ```
 ./fasta_multi_tool.py revcomp myfasta.fa
 ```
 
-3. Subseq: provide a FASTA file, a seq ID, and a coordinate range. Return a FASTA formated sequence containing the subseq requested
+3. Subseq: provide a FASTA file, a seq ID, and a coordinate range. Return a FASTA formatted sequence containing the subseq requested
 ```
 ./fasta_multi_tool.py subseq myfasta.fa seqName 5:100
 ```
 
-4. Translation: provide FASTA file of nucleotide sequences and return FASTA formated tranlslated protein sequence
+4. Translation: provide FASTA file of nucleotide sequences and return FASTA formatted tranlslated protein sequence
 ```
 ./fasta_multi_tool.py translate myfasta.fa
 ```
@@ -56,12 +56,12 @@ GC%: 55%
 ./fasta_multi_tool.py search myfasta.fa '[G|A].CTC' 
 ```   
 
-9. Wrapper. Reformat fasta to sequences lines of provided length. Provide FASTA file and return FASTA formated sequence of provided length
+9. Wrapper. Reformat fasta to sequences lines of provided length. Provide FASTA file and return FASTA formatted sequence of provided length
 ```
 ./fasta_multi_tool.py wrap myfasta.fa 60 
 ```  
 
-10. Masking. Uppercase every nucleotide then lower case all sequence matching provided pattern. Return FASTA formated sequence
+10. Masking. Uppercase every nucleotide then lower case all sequence matching provided pattern. Return FASTA formatted sequence
 ```
 ./fasta_multi_tool.py mask myfasta.fa TATATA 
 ```  
@@ -76,17 +76,17 @@ GC%: 55%
 ./fasta_multi_tool.py lower myfasta.fa 
 ```  
 
-13. Longest ORF: Provide a FASTA file, calculate the 6 reading frames, find the longest open reading frame. Return FASTA formated nucleotide sequence with the reading frame of the longest orf reported as well as the length of the longest ORF reported in the header.  
+13. Longest ORF: Provide a FASTA file, calculate the 6 reading frames, find the longest open reading frame. Return FASTA formatted nucleotide sequence with the reading frame of the longest orf reported as well as the length of the longest ORF reported in the header.  
 ```
 ./fasta_multi_tool.py orf myfasta.fa 
 ```  
 
-14. Translated longest ORF: Provide a FASTA file, calculate the 6 reading frames, find the longest open reading frame. Return the translated protein in FASTA formated with the reading frame and length of protein reported in the FASTA header.  
+14. Translated longest ORF: Provide a FASTA file, calculate the 6 reading frames, find the longest open reading frame. Return the translated protein in FASTA formatted with the reading frame and length of protein reported in the FASTA header.  
 ```
 ./fasta_multi_tool.py orf myfasta.fa 
 ```
 
-15. Shuffled sequence: Provide a FASTA file, shuffle each sequence. Return a FASTA formated shuffled sequence for each sequence in the provided FASTA file. 
+15. Shuffled sequence: Provide a FASTA file, shuffle each sequence. Return a FASTA formatted shuffled sequence for each sequence in the provided FASTA file. 
 ```
 ./fasta_multi_tool.py shuffle myfasta.fa 
 ```

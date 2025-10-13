@@ -3,7 +3,7 @@
 # lmd: 2023-10-18
 # Problem set 1 question 1
 
-# find every occurance of "Nobody" and print out the position
+# find every occurrence of "Nobody" and print out the position
 import re
 
 # set an incrementer to get line number

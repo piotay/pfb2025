@@ -125,7 +125,7 @@ Python does not allow punctuation characters such as `@`, `$`, and `%` within a 
  * Python language-defined special names begin and end with two underscores (ex. `__file__` which is the name of the current python file).
 
 
-Picking good variable names for the objects you name yourself is very important. Don't call your variables things like `items` or `my_list` or `data` or `var`. Except for where you have a very simple piece of code, or you are plotting a graph, don't call your objects `x` or `y` either. All these name examples are not decriptive of what kind of data you will find in the variable or object. Worse is to call a variable that contains gene names as `sequences`. Why is this such a bad idea? Think about what would happen if you filled your car up at a store labelled 'gas station' that sold lemonade. In computer science, names should always accurately describe the object they are attached to. This reduces possibility of bugs in your code, makes it much easier to understand if you come back to it after six months or share your code with someone, and makes it faster to write code that works right. Even though it takes a bit of time and effort to think up a good name for an object, it will prevent so many problems in the future!
+Picking good variable names for the objects you name yourself is very important. Don't call your variables things like `items` or `my_list` or `data` or `var`. Except for where you have a very simple piece of code, or you are plotting a graph, don't call your objects `x` or `y` either. All these name examples are not descriptive of what kind of data you will find in the variable or object. Worse is to call a variable that contains gene names as `sequences`. Why is this such a bad idea? Think about what would happen if you filled your car up at a store labelled 'gas station' that sold lemonade. In computer science, names should always accurately describe the object they are attached to. This reduces possibility of bugs in your code, makes it much easier to understand if you come back to it after six months or share your code with someone, and makes it faster to write code that works right. Even though it takes a bit of time and effort to think up a good name for an object, it will prevent so many problems in the future!
 
 ### Reserved Words
 
@@ -385,7 +385,7 @@ In Python we can write statements that perform mathematical calculations. To do 
 
 __Modulus__
 
-![3 divided by 2 is 1 with a remainder of 1. Modulus returns the remainer](images/modulus.png)
+![3 divided by 2 is 1 with a remainder of 1. Modulus returns the remainder](images/modulus.png)
 
 __Floor examples__
 
@@ -582,7 +582,7 @@ Control Statements are used to direct the flow of your code and create the oppor
 ### If Statement
 
 - Use the `if` Statement to test for truth and to execute lines of code if true.  
-- When the expression evaluates to true each of the statements indented below the `if` statment, also known as a _block_, will be executed.
+- When the expression evaluates to true each of the statements indented below the `if` statement, also known as a _block_, will be executed.
 
 
 **if**
@@ -907,7 +907,7 @@ How do you find out what methods work with an object? There's a handy function `
 >>> dir('ACGTGA')
 ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
-`dir()` will return all atributes of an object, among them its methods. Methods are functions belonging to a specific class (object type).
+`dir()` will return all attributes of an object, among them its methods. Methods are functions belonging to a specific class (object type).
 You can call `dir()` on any object, most often, you'll use it in the interactive Python shell. 
 
 To get more information on methods, you can use `help()`, which opens a long help message in a pager. You can use `q` to quit and get back to the interpreter. Here are some examples
@@ -1072,7 +1072,7 @@ this is the second line
 ```
 > We printed a new line to the screen
 
-`print()` adds spaces between arguments and a new line at the end for you. You can change these with `sep=` (the seperator between arguments) and `end=` (the character that goes at the end). Here's an example:
+`print()` adds spaces between arguments and a new line at the end for you. You can change these with `sep=` (the separator between arguments) and `end=` (the character that goes at the end). Here's an example:
 `print('one line', 'second line' , 'third line', sep='\n', end = '')`
 
 A neater way to do this is to express a multi-line string enclosed in triple quotes (""").
@@ -1389,7 +1389,7 @@ Let's try it:
 >>> print(zero_parts)
 ['00000', '000', '000000000000', '0', '00']
 ```
-> We started with a string and now have a list with all the delimeters removed
+> We started with a string and now have a list with all the delimiters removed
 
 Here is another example. Let's split on tabs to get a list of numbers in tab separated columns.   
 ```python
@@ -1442,7 +1442,7 @@ Let's take a list of expression values and create a tab delimited string that wi
 
 ## String Formatting
 
-Strings can be formated using new f-strings  `f''`, `f""` and `f'''`
+Strings can be formatted using new f-strings  `f''`, `f""` and `f'''`
 
  `'''`. That last one is the triple quote multiline string. For example, if you want to include literal stings and variables in your print statement and do not want to concatenate or use multiple arguments in the `print()` function you can use string formatting.
 
@@ -1706,7 +1706,7 @@ This works in exactly the same way with lists as it does with strings. This is b
 | 4     | cgc   |
 | 5     | acg   |
 
-use the syntax [start : end : step] to slice and dice your python seqeunce 
+use the syntax [start : end : step] to slice and dice your python sequence 
 
 ```python
 >>> codons = [ 'atg' , 'aaa' , 'agg' , 'aac' , 'cgc' , 'acg']
@@ -2594,7 +2594,7 @@ Brca1 TTTAA
 TP53 AAATT
 ```
 
-Sort by the length we will see later in the Fuctions lecture
+Sort by the length we will see later in the Functions lecture
 
 ---
 ## [Link to Python 5 Problem Set](problemsets/Python_05_problemset.md)
@@ -3107,9 +3107,9 @@ We could test for each of these, or use regular expressions. This is exactly wha
 >>> print(found)
 <_sre.SRE_Match object; span=(7, 10), match='ACG'>
 ```
-> Here you can see in the returned information that ACG starts at string postion 7 (nt 8). 
+> Here you can see in the returned information that ACG starts at string position 7 (nt 8). 
 >
-> The first position following the end of the match is at string postion 10 (nt 11).
+> The first position following the end of the match is at string position 10 (nt 11).
 
 What about other potential matches in our DNA string? We can use `findall()` function to find all matches.
 
@@ -3211,7 +3211,7 @@ g[gatc][gatc]t
 ^\d\d\d-\d\d\d\d$
 ```
 
-> only matche 3 digits followed by a dash followed by 4 digits, not extra characters anywhere are allowed
+> only match 3 digits followed by a dash followed by 4 digits, not extra characters anywhere are allowed
 <br> 
 
 [Find out about 867-5309](https://en.wikipedia.org/wiki/867-5309/Jenny) and [even more &#127925;](https://www.youtube.com/watch?v=6WTdTwcmxyo)
@@ -3326,7 +3326,7 @@ __Let' Try It__
 Example FASTA sequence record.
 
 ```
->ID Optional Descrption
+>ID Optional Description
 SEQUENCE
 SEQUENCE
 SEQUENCE 
@@ -3425,13 +3425,13 @@ downstream: CCGGTTTCCAAAGACAGTCTTCTAA
 2. In the first iteration of the `for` loop, the first set of matched subpatterns are returned as a tuple 
 3. The subpatterns are stored in the variables upstream and downstream  
 4. The `for` block of code is executed, and the matches are printed  
-5. In the second interation of the loop, the next set of matched subpatterns are returned as a tuple
+5. In the second iteration of the loop, the next set of matched subpatterns are returned as a tuple
 6. New subpatterns are returned and stored in the variables upstream and downstream
 7. The `for` block of code gets executed again 
 8. There is not a 3rd iteration because there are no more matches  
 9. The `for` loop ends  
 
-Another way to get this done is with an iterator, use the [re.finditer()](https://docs.python.org/3/library/re.html#re.finditer) function in a for loop. This allows you to not store all the matches in memory. `re.finditer()` also allows you to retrieve the postion of the match.
+Another way to get this done is with an iterator, use the [re.finditer()](https://docs.python.org/3/library/re.html#re.finditer) function in a for loop. This allows you to not store all the matches in memory. `re.finditer()` also allows you to retrieve the position of the match.
 
 ```python
 >>> dna = "ACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGATATTATCCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGATATTATCCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG"
@@ -3762,7 +3762,7 @@ You can nest dictionaries in lists as well:
 
 And, if you haven't guessed, you can nest lists in dictionaries
 
-Here is a dictionary of kmers. The key is the kmer and its values is a list of postions
+Here is a dictionary of kmers. The key is the kmer and its values is a list of positions
 ```python
 >>> kmers = {'ggaa': [4, 10], 'aatt': [0, 6, 12], 'gaat': [5, 11], 'tgga':
 ... [3, 9], 'attg': [1, 7, 13], 'ttgg': [2, 8]}
@@ -3863,7 +3863,7 @@ gene2: As= 3
 
 ### Building Complex Datastructures
 
-Below is an example of building a list with a mixed collection of value types. Remember that all elements inside a list or dictionary should be the same type. In other words, the values in a list should all be lists or dictonaries or scalar values. This allows you to loop over the data structure.
+Below is an example of building a list with a mixed collection of value types. Remember that all elements inside a list or dictionary should be the same type. In other words, the values in a list should all be lists or dictionaries or scalar values. This allows you to loop over the data structure.
 
 This is a list with lists and a dictionary. The dictionary has a key with a value that is a dictionary. 
 ```
@@ -4092,7 +4092,7 @@ Here is a very nice [interactive tutorial](https://www.learnpython.org/en/Pandas
 ## Exceptions
 
 
-There are a few different types of errors when coding. Syntax errors, logic errors, and exceptions. You have probably encountered all three. Syntax and logic errors are issues you need to deal with while coding. An exception is a special type of error that can be informative and used to write code to respond to this type of error. This is especially relevent when dealing with user input. What if they don't give you any, or it is the wrong kind of input? We want our code to be able to detect these types of errors and respond accordingly.
+There are a few different types of errors when coding. Syntax errors, logic errors, and exceptions. You have probably encountered all three. Syntax and logic errors are issues you need to deal with while coding. An exception is a special type of error that can be informative and used to write code to respond to this type of error. This is especially relevant when dealing with user input. What if they don't give you any, or it is the wrong kind of input? We want our code to be able to detect these types of errors and respond accordingly.
 
 ```python
 #!/usr/bin/env python3
@@ -4166,7 +4166,7 @@ Please provide a file name
 What if the user provides input but it is not a valid file or the path is incorrect? Or if you want to check to see if the user provided input as well as if it can open the input.  
 
 
-We can add multiple exception tests, like if/elif block. Each except statement can specify what kind of exception it is waiting to recieve. If that kind of exception occures, that block of code will be executed.
+We can add multiple exception tests, like if/elif block. Each except statement can specify what kind of exception it is waiting to receive. If that kind of exception occurs, that block of code will be executed.
 ```python
 import sys
 
@@ -4255,7 +4255,7 @@ Can't find file: test.txt :  No such file or directory
 We can call or raise exceptions too!! This is accomplished by using a `raise` statement. 
 
 1. First, create a new Exception Object, i.e., `ValueError()`
-2. Use the Exception Object in a Raise statment `raise ValueError('your message')`
+2. Use the Exception Object in a Raise statement `raise ValueError('your message')`
 
 
 Let's raise an exception if the file name does not end in 'fa'
@@ -4706,7 +4706,7 @@ By creating new local variables inside function definitions, python stops variab
 
 ## Modules
 
-Python comes with some core functions and methods. There are many useful modules that you will want to use. `import` is the statement for telling your script you want to use code in a module. As we've already seen with regular expresions, you can bring in code that handles regular expressions with `import re`
+Python comes with some core functions and methods. There are many useful modules that you will want to use. `import` is the statement for telling your script you want to use code in a module. As we've already seen with regular expressions, you can bring in code that handles regular expressions with `import re`
 
 ### Getting information about modules with `pydoc`
 
@@ -5151,7 +5151,7 @@ class DNARecord(object):
 ## END of CLASS DNARecord ###
 
 
-## Outside class defintion ###
+## Outside class definition ###
 # Create a new DNARecord Object
 dna_rec_obj = DNARecord() 
 

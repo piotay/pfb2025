@@ -3,7 +3,7 @@
 ---
 
 ### Short summary: 
-This project aims to develop a Phython-based pipeline for assembling and comparing genomes from three bacterial strains, including Cyanobacteria, Actinobacteria, Firmicutes. Princple steps of the pipline are:
+This project aims to develop a Python-based pipeline for assembling and comparing genomes from three bacterial strains, including Cyanobacteria, Actinobacteria, Firmicutes. Principle steps of the pipeline are:
 
 1.  Sequence identification and analysis
 2. De novo genome assembly

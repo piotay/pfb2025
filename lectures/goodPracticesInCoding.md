@@ -87,7 +87,7 @@ When are README's useful?
 
 ###### What is .md?
 
-Markdown (.md) is a lightwight markup language. Markdown files are text files (like the ones you have been creating) with a small amount of formatting.
+Markdown (.md) is a lightweight markup language. Markdown files are text files (like the ones you have been creating) with a small amount of formatting.
 * Here is a Markdown cheat sheet:
 
   ​	https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf

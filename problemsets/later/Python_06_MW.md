@@ -18,7 +18,7 @@ for line in file:
 file.close()
 ```
 
-2. Modifiy the script in the previous problem to write the contents to a new file called "Python_06_uc.txt"
+2. Modify the script in the previous problem to write the contents to a new file called "Python_06_uc.txt"
 
 ```python
 
@@ -129,7 +129,7 @@ fasta_fileobj = open(fasta_filename, 'r')	## create a file obj from the specifie
 sequence_name = ''				## initialize strings to populate from file object info
 sequence_desc = ''
 sequence_string = ''
-sequnce_dict = {}
+sequence_dict = {}
 
 for line in fasta_fileobj:  			## iterate through file object with for loop
     line = line.rstrip()			## strip white space on the right side (like a new line character!) 
@@ -243,7 +243,7 @@ with open('alpaca_all_genes.tsv','r') as file:			## open file object in with blo
   lineCount = 0							## line counter (to dodge the header file)
   allGenes=set()						## initializes an empty set
 
-  for line in file:						## iterate through file object and recoreds all but the first line into the set
+  for line in file:						## iterate through file object and records all but the first line into the set
     if lineCount == 0:
       lineCount += 1
       continue
@@ -331,7 +331,7 @@ with open('Python_06.seq.txt', 'r') as file_obj:	## opens the file as a file obj
 		to_print = ''				## (re)initialize a sequence to print
 
 		for item in ['ID', 'nt_tot', 'gc_cont']:## iterates through the information to print
-			to_print += item + ': ' + str(seq_dict[ID][item]) + '\t'		## fills the to_print string with the desired infor from the dict dict
+			to_print += item + ': ' + str(seq_dict[ID][item]) + '\t'		## fills the to_print string with the desired info from the dict dict
 
 		print(to_print)				## prints the desired info
 ```

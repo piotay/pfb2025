@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # 4. Sequence length method
-#    a. Add a method to your class that caclulates and returns the length
+#    a. Add a method to your class that calculates and returns the length
 #       of the sequence.
 #    b. Write some some lines of code, outside your class (in your main
 #       program) that gets and prints the sequence length using your new method.
 
 
-# Our Sequence class will inheret generic object methods from the object
+# Our Sequence class will inherit generic object methods from the object
 # class
 class Sequence(object):  
     def __init__(self, name=None, sequence='', organism=None):

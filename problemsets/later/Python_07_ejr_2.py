@@ -3,7 +3,7 @@
 # lmd: 2023-10-18
 # Problem set 1 question 2
 
-# replace occurances of old_name with new_name
+# replace occurrences of old_name with new_name
 import re
 
 # set an incrementer to get line number

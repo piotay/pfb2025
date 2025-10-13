@@ -1,5 +1,5 @@
 """
-1. Take a multi-FASTA [Python_08.fasta](https://raw.githubusercontent.com/prog4biol/pfb2023/master/files/Python_08.fasta) file from user input and calculate the nucleotide comp for each seq. Use a datastructure to keep count. Print out each seq name and its compostion in this format `seqName\tA_count\tT_count\tG_count\C_count`
+1. Take a multi-FASTA [Python_08.fasta](https://raw.githubusercontent.com/prog4biol/pfb2023/master/files/Python_08.fasta) file from user input and calculate the nucleotide comp for each seq. Use a datastructure to keep count. Print out each seq name and its composition in this format `seqName\tA_count\tT_count\tG_count\C_count`
 
 Here is a structure of a handy datastructure to store this information
 
@@ -307,7 +307,7 @@ import sys
 try:
     fasta_filename = sys.argv[1]  # raises IndexError if no input
 
-    # raise an exception if the file doesnt end iwth .fa, .nt, or .fasta
+    # raise an exception if the file doesnt end with .fa, .nt, or .fasta
     if not (fasta_filename.endswith('.fa') or
             fasta_filename.endswith('.nt') or
             fasta_filename.endswith('.fasta')):
