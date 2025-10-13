@@ -8,4 +8,4 @@ Python 9 - Exceptions -Problem Set
    - if no input is provided  
    - if the file cannot be opened
    - if the file does not end in '.fasta' or '.fa' or '.nt'
-   - if a non ATGCN charcter is found in the sequence
+   - if a non ATGCN character is found in the sequence

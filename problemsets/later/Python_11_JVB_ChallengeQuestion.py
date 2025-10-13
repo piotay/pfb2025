@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # Challenge Question
 # 1. Create a method that can compare two DNA Sequence records and returns
-#    True if they are the same or False if they are differet. Sameness is
-#    based on name, organism, and seqeunce. All need to be the same for two
+#    True if they are the same or False if they are different. Sameness is
+#    based on name, organism, and sequence. All need to be the same for two
 #    objects to be considered the same.
 
 
@@ -30,7 +30,7 @@ def _wrap(linear_sequence, width=None):
 
     return wrapped_sequence
 
-# Our Sequence class will inheret generic object methods from the object
+# Our Sequence class will inherit generic object methods from the object
 # class
 class Sequence(object):  
     def __init__(self, name=None, sequence='', organism=None):

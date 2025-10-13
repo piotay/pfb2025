@@ -2,7 +2,7 @@
 
 ## Git/GitHub setup.  You may have completed this while following along with lecture. You don't need to do this again.
 
-1. Go to GitHub and create a free accout.
+1. Go to GitHub and create a free account.
 
 2. You may have completed this while following along with lecture. You don't need to do this again. Look back at the notes and create your SSH key and add it to your github account.
    [Notes for key creation](https://github.com/prog4biol/pfb2025/blob/master/unix.md#generating-a-new-ssh-key)
@@ -96,14 +96,14 @@ ATTCTTGGCCTTAAATTGGCCTTG
   - delete a line
   - undo your last delete
   - search for `CTT`
-  - find next occurance of `CTT`
+  - find next occurrence of `CTT`
   - Save and exit
 
 
 7. ADD/COMMIT/PUSH `mysequences.txt` to your remote.
 
 
-8. Create a directory called `fastas`.     (Hint: use mkdir)
+8. Create a directory called `fastas` inside your problem_sets directory.     (Hint: use mkdir)
 9. Copy the fasta file that you renamed to `cancer_genes.fasta` to the fasta directory.
 10. Verify that the file is within the fasta directory.  
 11. Delete the the original file that you used for copying.  

@@ -12,9 +12,9 @@ Move into your PFB_problemsets directory and make a new directory called 'python
     - QUIT the Interpreter
     
 
-3. Working with a text editor: Use `vi` to create and write a script. Name your script `about_me.py`. Python scripts should always have the `.py` extension.
-   - `vi about_me.py`   
-   - Make sure to include `#!/usr/bin/env python3` on line 1 of your script. **It has to be on line one. Do not leave a blank line above.** 
+3. Working with a text editor: Use VSCODE or `vi` to create and write a script. Name your script `about_me.py`. Python scripts should always have the `.py` extension.
+   - if using vi: `vi about_me.py` 
+   - for any editor: Make sure to include `#!/usr/bin/env python3` on line 1 of your script. **It has to be on line one. Do not leave a blank line above.** 
    - Add code to print out, your name
       
         Script Output:
@@ -32,7 +32,7 @@ Move into your PFB_problemsets directory and make a new directory called 'python
          My name: Sofia
          My favorite color: Green
         ```
-   - Save it, and run it from the command line. 
+   - Save it, and run it from the command line or VSCODE integrated terminal. 
    - Now add some code to create a variable with your favorite activity. Make sure to give your variable a descriptive name.
    - Print out the variable with your favorite activity. You will need to use a comma in your print statement to print text and your variable. `print("some text" , your_variable)`
 

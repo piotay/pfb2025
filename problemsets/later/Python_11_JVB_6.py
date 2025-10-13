@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # 6. GC content method
-#    a. Add in a method that caclulates and returns the GC content.
+#    a. Add in a method that calculates and returns the GC content.
 #    b. Write some some lines of code, outside your class (in your main
 #       program) that gets and prints the sequence GC content using your
 #       new method.
 
 
-# Our Sequence class will inheret generic object methods from the object
+# Our Sequence class will inherit generic object methods from the object
 # class
 class Sequence(object):  
     def __init__(self, name=None, sequence='', organism=None):

@@ -5,7 +5,7 @@ Databases (DBs) such as NCBI, EMBL-EBI, and Phytozome use standardized and predi
 
 ## Proposed programming solution
 
-The proposal for this project is to implement a Python API to query and fetch genome sequences and annotations from NCBI, EMBL-EBI, DDBJ, Phytozome, and/or other large resource providers. Becuase these large DBs often assign their own unique identifers to each sequence, it's often necessary to convert the NCBI/EMBL-EBI/DDJB/other database-native identifiers (e.g., NC_000001.11 or CM000663.2) back to their original, submitted identifiers (e.g., chr1). This API can be further extended to automatically index genomes and generate CDS and peptide sequences from downloaded GFF3s. A Python program using the API could also be written to allow access to these tools via the command-line.
+The proposal for this project is to implement a Python API to query and fetch genome sequences and annotations from NCBI, EMBL-EBI, DDBJ, Phytozome, and/or other large resource providers. Because these large DBs often assign their own unique identifiers to each sequence, it's often necessary to convert the NCBI/EMBL-EBI/DDJB/other database-native identifiers (e.g., NC_000001.11 or CM000663.2) back to their original, submitted identifiers (e.g., chr1). This API can be further extended to automatically index genomes and generate CDS and peptide sequences from downloaded GFF3s. A Python program using the API could also be written to allow access to these tools via the command-line.
 
 ## Overview of features/stages/components to be implemented
 ### How the proposed code solves the problem
@@ -47,7 +47,7 @@ Some data portals (such as Phytozome) require a user name and password; requirin
 
 ## Anticipated programming concepts (logic, data structures, modules, algorithms, etc.) to be used in implementing the solution
 
-- Due to the modular nature of this API, modules and classes are the most appropriate data structures to implment this.
+- Due to the modular nature of this API, modules and classes are the most appropriate data structures to implement this.
 - The main, abstracted API layer will need to choose from a given set of supported databases to determine call the appropriate database-specific API sublayer (using conditional statements).
 - File downloads can performed using calls to Unix tools (e.g., `curl`) or use public Python libraries (using the `subprocess` or `http` modules, respectively).
 - Modules extracting CDS and peptide sequences to file will require FASTA and GFF parsing: specifically file IO, string operations, and likely dictionaries).

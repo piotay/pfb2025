@@ -220,10 +220,10 @@ while count < 101:              ## specifies the conditions for the while loop
 #!/usr/bin/env python3
 
 count = 1000           			## initialize the counter
-fact_product = 1                        ## initilizes the factorial product
+fact_product = 1                        ## initializes the factorial product
 
 while count > 0:                	## specifies the conditions for the while loop
-	fact_product *= count   	## performs the multiplicaiton required to calculate the factorial
+	fact_product *= count   	## performs the multiplication required to calculate the factorial
 	count -= 1              	## increments the counter by 1
 	print(fact_product)             ## a very, very large number (note this is not in theloop, so that it only prints once)
 ```
@@ -348,7 +348,7 @@ my_tup_list = [(len(nt),nt) for nt in nt_list]		## generates a list of tuples wi
 ```
 
 
-13. Modify the script from #11 so that you also print out the number (postion in the list) of each sequence (i.e., "1\\t4\\tACGT\\n")
+13. Modify the script from #11 so that you also print out the number (position in the list) of each sequence (i.e., "1\\t4\\tACGT\\n")
 
 ```python
 
@@ -361,7 +361,7 @@ for index in range(len(nt_list)):       ## specifies the iterator as an index as
 
 ```
 
-14. Have you been commiting you work?
+14. Have you been committing you work?
 
 ## Fun challenge problems! These are real scripts you might use in real life. You have already learned all you need to know to do each. If you don't have enough time in this session to complete, come back and try later.
 
@@ -419,6 +419,6 @@ GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACC
    - split the new formatted sequence on the cut sites, store the resulting fragments in a list
    - iterate over each fragment and report
       - the start position in the original sequence
-      - the end postion in the orginal sequence
+      - the end position in the original sequence
       - the length of each fragemnt
    - sort the fragments by length and print out as they would appear on a agrose gel. (big to little)

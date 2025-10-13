@@ -312,8 +312,8 @@ __Cuffdiff file format__
 
 | Column number | Column name       | Example              | Description                              |
 | ------------- | ----------------- | -------------------- | ---------------------------------------- |
-| 1             | Tested id         | XLOC_000001          | A unique identifier describing the transcipt, gene, primary transcript, or CDS being tested |
-| 2             | Tested id         | XLOC_000001          | A unique identifier describing the transcipt, gene, primary transcript, or CDS being tested |
+| 1             | Tested id         | XLOC_000001          | A unique identifier describing the transcript, gene, primary transcript, or CDS being tested |
+| 2             | Tested id         | XLOC_000001          | A unique identifier describing the transcript, gene, primary transcript, or CDS being tested |
 | 3             | gene              | Lypla1               | The gene_name(s) or gene_id(s) being tested |
 | 4             | locus             | chr1:4797771-4835363 | Genomic coordinates for easy browsing to the genes or transcripts being tested. |
 | 5             | sample 1          | Liver                | Label (or number if no labels provided) of the first sample being tested |

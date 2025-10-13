@@ -185,7 +185,7 @@ import Bio.Seq
 seqobj = Bio.Seq.Seq('ATGCGATCGAGC')     
 print(f"{seqobj} has {len(seqobj)} nucleotides")
 ```
-> Note: Sometimes you might have to convert an object to string to get sequence `seq_str = str(seqobj)`. The Seq Object predicts that if a user writes `print(seqobj)` they will want to print the sequence string not the entire Seq Object. Likewise, the Seq Object predicts that if a user writes `len(seqobj)` they will want to caluculate the length of the sequence not the length of the entire Seq Object
+> Note: Sometimes you might have to convert an object to string to get sequence `seq_str = str(seqobj)`. The Seq Object predicts that if a user writes `print(seqobj)` they will want to print the sequence string not the entire Seq Object. Likewise, the Seq Object predicts that if a user writes `len(seqobj)` they will want to calculate the length of the sequence not the length of the entire Seq Object
 
 
 produces 
@@ -245,7 +245,7 @@ AGC
 
 __Data types__
 
-The Seq Object predicts that we want a string when we `print()` our seqobj or if we try to caculate `len()` or if we try to take a substr `seqobj[0:3]` of our seqobj. The authors have coded this functionality into the Class rules. They did not predict, or write into the Class rules that if we use `findall()` that we want to search just the sequence. The Class does not know how to handle this. But it has predicted that if we use the `str()` we want to return the sequence that is contained within our object.
+The Seq Object predicts that we want a string when we `print()` our seqobj or if we try to calculate `len()` or if we try to take a substr `seqobj[0:3]` of our seqobj. The authors have coded this functionality into the Class rules. They did not predict, or write into the Class rules that if we use `findall()` that we want to search just the sequence. The Class does not know how to handle this. But it has predicted that if we use the `str()` we want to return the sequence that is contained within our object.
 
 ```python
 >>> seqobj = Seq('ATGCGATCGAGC')
@@ -639,7 +639,7 @@ Was that easy or what??!??!!?
 
 ## Parsing BLAST output
 
-For simple parsing, or non BioPython parsing of NCBI BLAST results, use output formated in tab-separated columns (`-outfmt 6` or `-outfmt 7`) Both these formats are customizable when running the BLAST locally.
+For simple parsing, or non BioPython parsing of NCBI BLAST results, use output formatted in tab-separated columns (`-outfmt 6` or `-outfmt 7`) Both these formats are customizable when running the BLAST locally.
 
 If you want to parse the full output of BLAST with Biopython, it's necessary work with __XML__ formatted BLAST output `-outfmt 5`.
 

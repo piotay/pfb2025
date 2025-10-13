@@ -31,7 +31,7 @@ Skip to the `Enabling Syntax Highlighting` section below.
 
 The default version of `nano` installed on macOS does not support syntax highlighting, so we will need to install an updated version on our own. This will involve downloading the source code, compiling it, and installing it. Note that these commands are very typical for installing most Unix programs.
 
-By default, macOS does not include a C compiler. To install it, you will need to download a program called Xcode from the App Store (which is free). You will not need to use this program; just downloading and launching it once will isntall the compilers you need (and many other programs, e.g. `git`).
+By default, macOS does not include a C compiler. To install it, you will need to download a program called Xcode from the App Store (which is free). You will not need to use this program; just downloading and launching it once will install the compilers you need (and many other programs, e.g. `git`).
 
 ##### Get the source code.
 

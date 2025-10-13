@@ -10,7 +10,7 @@ import re
 #if no input is provided
 # if the file cannot be opened
 # if the file does not end in '.fasta' or '.fa' or '.nt'
-# if a non ATGCN charcter is found in the sequence
+# if a non ATGCN character is found in the sequence
 
 #defining the variable to store the filename that the user inputs
 file = ''
@@ -38,7 +38,7 @@ try:
                     if re.findall(r"(^[ATGCN])\S\D[ATGCN]+",line):
                         print(line)
                     else:
-                        raise NotASequenceFileError("A non ATGCN charcter is found in the sequence")
+                        raise NotASequenceFileError("A non ATGCN character is found in the sequence")
 except IndexError:
     print("Please provide a file name")
 except NotFastaError:

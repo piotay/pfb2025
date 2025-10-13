@@ -106,7 +106,7 @@ RNA =DNA_uc.replace('T','U')
 print(RNA)
 ```
 # Problem 9
-Write a script that calculates the AT content in this DNA string. AT content is the proportion of bases that are either A or T. You will need to use some mathmatical functions as well as a python function. It is ALWAYS a good idea to test your code with test data. For example, the below sequence is long and you don't know for sure how many As and Ts are present. Test your code with a DNA string that you KNOW the correct answer. In AATTGGCCA you know you have 3 As and 2 Ts.
+Write a script that calculates the AT content in this DNA string. AT content is the proportion of bases that are either A or T. You will need to use some mathematical functions as well as a python function. It is ALWAYS a good idea to test your code with test data. For example, the below sequence is long and you don't know for sure how many As and Ts are present. Test your code with a DNA string that you KNOW the correct answer. In AATTGGCCA you know you have 3 As and 2 Ts.
 - Now add in lines of code to calculate GC content of the above DNA string. Run with test data first!!
 
 GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCG
@@ -157,7 +157,7 @@ nucGs_slice = (DNA_slice.upper().count('G'))
 print("There are", nucGs, "in the sequence and", nucGs_slice, "in the slice")
 ```
 # Problem 13
-Write a new script that prints out the reverse complement of the above DNA string. Hint for reverse. Use string formating for printing.
+Write a new script that prints out the reverse complement of the above DNA string. Hint for reverse. Use string formatting for printing.
 ```
 Original Sequence  5'ATGCAGGGGAAACATGATTCAGGAC 3'  
 Complement         3'TACGTCCCCTTTGTACTAAGTCCTG 5'  
@@ -177,7 +177,7 @@ print (DNArc)
 # Problem 14
 Write a script to find the start position of an EcoRI site in the above DNA sequence. Remember DNA sequences start with a 1 and a python string starts with a 0. Run with test data first.
 - What is the end position of the EcoRI site?
-- Use string formating to print out the start and end of the EcoRI site.
+- Use string formatting to print out the start and end of the EcoRI site.
 
 ```
 small_DNA = "AGAATTCAATCCGGGATA"

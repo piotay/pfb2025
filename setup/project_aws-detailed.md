@@ -14,13 +14,13 @@
    1. **Web server**: Click the `Add Rule` button to add an **HTTP** security rule, and accept all defaults. Finally, click the `Review and Launch` button to review the instance configuration and launch the instance.
    2. **Jupyter notebooks**: Click the `Add Rule` button and select **Custom TCP Rule** from the Connection type drop-down. Input **TCP** as the Protocol type, **8888** as the Port Range, and **0.0.0.0/0** in Source.
 10. If the instance configuration is correct, press the blue `Launch` button to launch the instance. If you receive a dialogue box requesting a key pair, select "Create new key pair" from the first drop-down menu if this is the first of launch instance, otherwise choose "Choose an existing key pair" and specify the key pair name from the second drop-down menu. Finally, confirm that you have access to the selected private key file and click the `Launch Instances` button.
-11. The instance will initialize; make sure it passess all initialization checks before proceeding.
+11. The instance will initialize; make sure it passes all initialization checks before proceeding.
 
 
 ## Assigning project server domain names
 1. Go to: https://us-east-1.console.aws.amazon.com/route53/v2/home
 
-2. In the *AWS EC2 Dashboad*, click _Instances_ from the side bar and copy the elastic IP for the running instance to your clipboard.
+2. In the *AWS EC2 Dashboard*, click _Instances_ from the side bar and copy the elastic IP for the running instance to your clipboard.
 
 3. Open a new *Console* window, select the _Route 53_ link under the *Networking & Content Delivery* Section of the *Services* dropdown menu (upper left corner of the browser page). Add the elastic IP address to a new "Record Set" associated with programmingforbiology.org:
   1. Click the _Hosted zones_ link.
@@ -210,13 +210,13 @@ Open a new terminal window. Log into the AWS instance, connection the local host
 ssh -L 8000:localhost:8888 -i /path/to/admin.pem ubuntu@ec2-*.compute.amazonaws.com
 ```
 
-Once logged into the EC2 instance, launch a juptyer notebook:
+Once logged into the EC2 instance, launch a jupyter notebook:
 
 ```bash
 jupyter --port=8888 --no-browser
 ```
 
-Jupyter will report an URL to the terminal window with a hex token that looks somethin like:
+Jupyter will report an URL to the terminal window with a hex token that looks something like:
 
 ```bash
 http://localhost:8888/?token=b63246942ed644eafe0bac6de1682f265d972d7fef0b3baf
@@ -232,7 +232,7 @@ Jupyter notebook should then display the Jupyter navigation window for the remot
 
 ## Creating user accounts
 
-User names and account names were organzied into files by their group name with the following format:
+User names and account names were organized into files by their group name with the following format:
 
 ```bash
 # in projectname.txt

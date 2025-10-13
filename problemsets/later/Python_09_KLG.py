@@ -9,7 +9,7 @@
 #    - if no input is provided  
 #    - if the file cannot be opened
 #    - if the file does not end in '.fasta' or '.fa' or '.nt'
-#    - if a non ATGCN charcter is found in the sequence
+#    - if a non ATGCN character is found in the sequence
 
 ## I'm going to add some error handling to a fasta parser that prints the fasta to the screen in the tabular format "seqid\tsequence"
 

@@ -3,7 +3,7 @@
 #    program) that sets the name, DNA sequence, and organism for a gene.
 
 
-# Our Sequence class will inheret generic object methods from the object
+# Our Sequence class will inherit generic object methods from the object
 # class
 class Sequence(object):  
     def __init__(self, name=None, sequence='', organism=None):

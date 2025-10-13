@@ -3,7 +3,7 @@
 #    and it's organism of origin. Do this by creating an __init__ function.
 
 
-# Our Sequence class will inheret generic object methods from the object
+# Our Sequence class will inherit generic object methods from the object
 # class
 class Sequence(object):  
     def __init__(self, name, sequence, organism=None):

@@ -16,7 +16,7 @@ Python 4 Problem Set -- Lists and Loops
 	l.  Use `join` to create a string. Join the elements on ', '  
 	m. **Exit the interpreter**
 	
-2. List manipulation: Create a new **script in vi**   
+2. List manipulation: Create a new **script using a text editor**   
     a. In the script, create a variable called `taxa_string` that contains this string:  `"sapiens : erectus : neanderthalensis"`  
     b. Print `taxa_string`  
     c. Split `taxa_string` into a list called `taxa_list`. Use `" : "` as your separator.  
@@ -41,7 +41,7 @@ Python 4 Problem Set -- Lists and Loops
      - Print the original list again `print(my_list2)`
      - **close the interpreter** 
 
-4. While loops: **Write a script with vi**.
+4. While loops: **Write a script with a text editor**.
    -  Use a `while` loop to print out the numbers 1 to 100.
    -  After you correctly print out each number in the body of the while loop, add in a variable, `sum` that is used to keep a running sum of each number.
    -  Outside the while loop print the total sum of all numbers 1 to 100.
@@ -64,7 +64,7 @@ Python 4 Problem Set -- Lists and Loops
        - Calculate two cumulative sums, one of all the even values and one of all the odd values.
 
      - Finally outside the nested `for` block
-        - print the final two sums formated like this:
+        - print the final two sums formatted like this:
          ```
          Sum of even numbers: 150
          Sum of odds: 286
@@ -77,7 +77,7 @@ Python 4 Problem Set -- Lists and Loops
 9. List Comprehension: **Create a script**.    
    -  Create a list using list comprehension with every number between 0 and 99
    -  Create another list with every number between 1 and 100.
-   -  Verifiy your lists have the correct values by printing the contents using a `for` loop
+   -  Verify your lists have the correct values by printing the contents using a `for` loop
      
 10. User input, for loops, and Range: **Create a script**.    
    -  Get the user provided minimum (`sys.argv[1]`) and maximum (`sys.argv[2]`).
@@ -105,7 +105,7 @@ Python 4 Problem Set -- Lists and Loops
    12	ATATATATCGAT
    8	ATGGGCCC
    ```
-   - Next, print out the number (postion in the list) of each sequence. Make sure your columns are tab separated (i.e., "index\\tlength\\tsequence\\n")
+   - Next, print out the number (position in the list) of each sequence. Make sure your columns are tab separated (i.e., "index\\tlength\\tsequence\\n")
    ```
    0	14	ATGCCCGGCCCGGC
    1	25	GCGTGCTAGCAATACGATAAACCGG
@@ -116,7 +116,7 @@ Python 4 Problem Set -- Lists and Loops
 
 
    
-14. Have you been commiting you work?
+14. Have you been committing you work?
 
 -----------------
 -----------------
@@ -151,6 +151,6 @@ GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACC
    - split the new formatted sequence on the cut sites, store the resulting fragments in a list
    - iterate over each fragment and report
       - the start position in the original sequence
-      - the end postion in the orginal sequence
+      - the end position in the original sequence
       - the length of each fragemnt
    - sort the fragments by length and print out as they would appear on a agrose gel. (big to little)

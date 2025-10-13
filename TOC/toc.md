@@ -73,7 +73,7 @@ Jessen Bredeson
          * [Adding your SSH key to the ssh-agent](unix.md/#adding-your-ssh-key-to-the-ssh-agent)
       * [Adding a new SSH key to your GitHub account](unix.md/#adding-a-new-ssh-key-to-your-github-account-1)
       * [Paste into your GitHub account](unix.md/#paste-into-your-github-account)
-      * [Do this to ensure that you do not encounter errors by attemping to add files that are too large](unix.md/#do-this-to-ensure-that-you-do-not-encounter-errors-by-attemping-to-add-files-that-are-too-large)
+      * [Do this to ensure that you do not encounter errors by attempting to add files that are too large](unix.md/#do-this-to-ensure-that-you-do-not-encounter-errors-by-attemping-to-add-files-that-are-too-large)
       * [Creating a new repository](unix.md/#creating-a-new-repository)
          * [Keeping track of differences between local and remote repositories](unix.md/#keeping-track-of-differences-between-local-and-remote-repositories)
          * [Deleting and moving files](unix.md/#deleting-and-moving-files)

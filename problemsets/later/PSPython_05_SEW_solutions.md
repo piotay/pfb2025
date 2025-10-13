@@ -203,7 +203,7 @@ for k, v in favs.items():
 print('\nDone.\n')
 ```
 
-10. Write a script to find the intersection, difference, union, and symetrical difference between these two sets.
+10. Write a script to find the intersection, difference, union, and symmetrical difference between these two sets.
 
 ```
 Set A = 3 14 15 9 26 5 35 9
