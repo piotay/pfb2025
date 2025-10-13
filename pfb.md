@@ -387,23 +387,6 @@ __Modulus__
 
 ![3 divided by 2 is 1 with a remainder of 1. Modulus returns the remainder](images/modulus.png)
 
-__Floor examples__
-
-```python
->>> 3/2
-1.5
->>> 3//2
-1
->>> -11/3
--3.6666666666666665
->>> -11//3
--4
->>> 11/3
-3.6666666666666665
->>> 11//3
-3
-```
-
 
 
 ### Assignment Operators  
