@@ -30,7 +30,7 @@ def _wrap(linear_sequence, width=None):
 
     return wrapped_sequence
 
-# Our Sequence class will inheret generic object methods from the object
+# Our Sequence class will inherit generic object methods from the object
 # class
 class Sequence(object):  
     def __init__(self, name=None, sequence='', organism=None):

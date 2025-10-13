@@ -2,13 +2,13 @@
 import re
 # python 11 Classes problem set
 # Challenge question
-#Create a method that can compare two DNA Sequence records and returns True if they are the same or False if they are differet. 
-# #Sameness is based on name, organism, and seqeunce. All need to be the same for two objects to be considered the same.
+#Create a method that can compare two DNA Sequence records and returns True if they are the same or False if they are different. 
+# #Sameness is based on name, organism, and sequence. All need to be the same for two objects to be considered the same.
 
 ## HERE I DEFINE CLASSES ##
 #defining a class DNAsequence
 class DNAsequencecomparison(object):
-    #1 define class atributes
+    #1 define class attributes
     def __init__(self,sequence1,name1,organism1,sequence2, name2, organism2):
         self.sequence1 = sequence1
         self.genename1 = name1
@@ -16,14 +16,14 @@ class DNAsequencecomparison(object):
         self.sequence2 = sequence2
         self.genename2 = name2
         self.origin2 = organism2
-    # creating a method to create a dictionary with atributes1
+    # creating a method to create a dictionary with attributes1
     def Createdict(self):
         dictofattr1 = {}
         header1 = self.genename1 + self.origin1
         dictofattr1[header1] = self.sequence1
         #print(dictofattr1)
         return dictofattr1
-    #creating a method to query on said dictionary with atributes2
+    #creating a method to query on said dictionary with attributes2
     def Queryindict(self):
         dictofattr1 = self.Createdict()
         header2 = self.genename2 + self.origin2

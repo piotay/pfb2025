@@ -2,7 +2,7 @@
 # ejr: 2023-10-18
 # lmd: 2023-10-18
 # Problem set 1 question 6
-# find apoI restriction siee and print occurances
+# find apoI restriction siee and print occurrences
 
 import re
 

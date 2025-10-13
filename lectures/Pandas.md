@@ -4,7 +4,7 @@
 
 **Python Data Analysis Library**
 
-A fully-featured code library for manipulating data arranged in tables (i.e. matricies or data frames). It's arguably the most popular Python library used for data engineering. For those of you who have used the popular statistical language, R, Pandas brings many of that languages capabilities to python.
+A fully-featured code library for manipulating data arranged in tables (i.e. matrices or data frames). It's arguably the most popular Python library used for data engineering. For those of you who have used the popular statistical language, R, Pandas brings many of that languages capabilities to python.
 
 ### Why familiarize yourself with Pandas?
 
@@ -42,7 +42,7 @@ A data frame is a table-like data structure and can contain different data types
 
 **Operations in Pandas, like R, work most efficiently when vectorized**
 
-You can think of a vector (also referred to as an [array](https://docs.python.org/3/library/array.html)) as a type of list that contains a single data type and optimized for parallel computing. For matricies and data frames in Pandas (also NumPy), vectors are rows and columns.
+You can think of a vector (also referred to as an [array](https://docs.python.org/3/library/array.html)) as a type of list that contains a single data type and optimized for parallel computing. For matrices and data frames in Pandas (also NumPy), vectors are rows and columns.
 
 Rather that looping through individual values (scalars), we apply operations to vectors (rows/columns). That is, the vector is treated as a single object. This topic can get a bit complicated, but it is worth doing your homework if you frequently work with these data types. Here's a few articles to get you started:
 
@@ -210,7 +210,7 @@ sample_name
 ```
 
 
- **iloc** allows us to subset rows and colums by index number. This is useful if we want to subset multiple rows or columns without typing index names. 
+ **iloc** allows us to subset rows and columns by index number. This is useful if we want to subset multiple rows or columns without typing index names. 
 ```
 print(seq_info_input.iloc[:3])
 
@@ -266,9 +266,9 @@ Understanding how to subset your data using conditional operations is *very*, _v
 seq_info_input.loc[(seq_info_input['body_length'] < 8 )]
 ```
 
-In the example below we chain boolean operators together to achieve results that satisfy multiple conditions. You can make these statments complex as you'd like.
+In the example below we chain boolean operators together to achieve results that satisfy multiple conditions. You can make these statements complex as you'd like.
 
-Note: Pandas uses the bitwise logical operators (see earlier lecture). A pipe symbol `|`  represents `or`, and an ampersand symbol `&`  represents `and`. The backslashes in code simply allow us to break up our statement at arbitrary points for readbility.
+Note: Pandas uses the bitwise logical operators (see earlier lecture). A pipe symbol `|`  represents `or`, and an ampersand symbol `&`  represents `and`. The backslashes in code simply allow us to break up our statement at arbitrary points for readability.
 
 ```
 # Subsetting on multiple conditions.
@@ -325,7 +325,7 @@ B  0.830705  1.000000
 ```
 
 
-That summarizes our introduction to Pandas. As you can see, Pandas greatly simplifies the process of exploring and making calculations in data frames and matricies. Check out the link below for the official documentation.
+That summarizes our introduction to Pandas. As you can see, Pandas greatly simplifies the process of exploring and making calculations in data frames and matrices. Check out the link below for the official documentation.
 
 
 
@@ -448,7 +448,7 @@ What's another good way to investigate a relationship between two sets of data?
 
 ### Documentation
 
-That summarizes our introduction to Pandas. As you can see, Pandas greatly simplifies the process of exploring and making calculations in data frames and matricies. Check out the link below for the offical documentation.
+That summarizes our introduction to Pandas. As you can see, Pandas greatly simplifies the process of exploring and making calculations in data frames and matrices. Check out the link below for the official documentation.
 
 
 [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/index.html)

@@ -10,7 +10,7 @@ mySet2 = {'ATGTGGG'}
 #1.2 Does it matter which method you use? Yes
 #1.3 How many items are in mySet and mySet2? mySet has 3 items, while mySet2 has only one
 
-#2. Write a script that creates 2 sets using the collections of numbers below. Find the intersection, difference, union, and symetrical difference between these two sets.
+#2. Write a script that creates 2 sets using the collections of numbers below. Find the intersection, difference, union, and symmetrical difference between these two sets.
 set1 = {3, 14, 15, 9, 26, 5, 35, 9}
 set2 = {60, 22, 14, 0, 9}
 print("My set 1: ",set1)
@@ -22,7 +22,7 @@ print("Intersection ", set1&set2)
 print("difference ", set1-set2)
 #2.3 union
 print("union ", set1|set2)
-#2.4 symetrical difference
+#2.4 symmetrical difference
 print("Symmetrical difference ", set1^set2)
 
 #3. If you create a set using a DNA sequence, what will you get back? Try it with this sequence:
@@ -54,7 +54,7 @@ for line in file_txt:
 #5.3 Print each line to the STDOUT
 file_txt.close()
 
-# 6. Modifiy the script in the previous problem to write the contents to a new file called "Python_06_uc.txt"
+# 6. Modify the script in the previous problem to write the contents to a new file called "Python_06_uc.txt"
 with open("Python_06.txt", "r") as file_txt:
 	output = open("Python_06_uc.txt","w")
 	for line in file_txt:
@@ -116,7 +116,7 @@ with open("fasta_file.fasta", "r") as fasta:
 		nline = line.rstrip()
 		nline = nline.upper()
 		print(nline)
-		#I can create a list of tuples, where each touple has the header and sequence pair of the fasta
+		#I can create a list of tuples, where each tuple has the header and sequence pair of the fasta
 		# THEN I CAN convert the list into the dict?
 		#separate by ">" first and the separate by \n
 		if nline[0] == ">":

@@ -52,7 +52,7 @@ True
 
 5. Using a text editor, write a script that 
     - Assigns a value to a variable
-    - Has a [if/else statment](https://github.com/prog4biol/pfb2018#logic-control-statements) in which:
+    - Has a [if/else statement](https://github.com/prog4biol/pfb2018#logic-control-statements) in which:
        - It prints out a confirmation of truth if the value is true
        - It prints out "Not True" if the value is not true. 
 

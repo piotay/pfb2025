@@ -22,7 +22,7 @@ You'll launch it like this
 
 Remember the `&` means run this command in the background. Jupyter starts in the directory you are in when it's launched.
 
-You'll see a lot of messages appear in the screen and a broswer window will open. 
+You'll see a lot of messages appear in the screen and a browser window will open. 
 
 
 

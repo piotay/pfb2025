@@ -168,7 +168,7 @@ Use awk if you want to reorder columns in a file, do simple filtering and calcul
 
 Here's a way to save typing
 
-`alias` is a unix comand that goes in your ~/.profile file (bash) or ~/.zshrc (zsh). Make one with `vi` if you don't have one already. 
+`alias` is a unix command that goes in your ~/.profile file (bash) or ~/.zshrc (zsh). Make one with `vi` if you don't have one already. 
 
 ```bash
 alias ll='ls -l'
@@ -323,7 +323,7 @@ with open(blast_out,'r') as blast_results:
         evalue = float(fields[10]) # this will be a string because 
                             # we read in from a file
                             # don't forget to convert to float
-        # collect hits and evalues into dictionary
+        # collect hits and evaluates into dictionary
         if query not in homologs:
             homologs[query] = [ (subject, evalue) ]
         else:
@@ -384,7 +384,7 @@ We won't talk about DBs more here, but they are useful for larger data projects.
 ### Public databases
 
 __NCBI__ (sequences, searching)  
-Landmark (modle organisms)
+Landmark (model organisms)
 Above are better than: nr (proteins),  nt (nucleotides)  Lots of data, uncurated, complete
 Sequence Read Archive (SRA) 454, illumina, short reads
 

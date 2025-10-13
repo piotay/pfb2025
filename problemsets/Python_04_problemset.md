@@ -64,7 +64,7 @@ Python 4 Problem Set -- Lists and Loops
        - Calculate two cumulative sums, one of all the even values and one of all the odd values.
 
      - Finally outside the nested `for` block
-        - print the final two sums formated like this:
+        - print the final two sums formatted like this:
          ```
          Sum of even numbers: 150
          Sum of odds: 286
@@ -77,7 +77,7 @@ Python 4 Problem Set -- Lists and Loops
 9. List Comprehension: **Create a script**.    
    -  Create a list using list comprehension with every number between 0 and 99
    -  Create another list with every number between 1 and 100.
-   -  Verifiy your lists have the correct values by printing the contents using a `for` loop
+   -  Verify your lists have the correct values by printing the contents using a `for` loop
      
 10. User input, for loops, and Range: **Create a script**.    
    -  Get the user provided minimum (`sys.argv[1]`) and maximum (`sys.argv[2]`).
@@ -105,7 +105,7 @@ Python 4 Problem Set -- Lists and Loops
    12	ATATATATCGAT
    8	ATGGGCCC
    ```
-   - Next, print out the number (postion in the list) of each sequence. Make sure your columns are tab separated (i.e., "index\\tlength\\tsequence\\n")
+   - Next, print out the number (position in the list) of each sequence. Make sure your columns are tab separated (i.e., "index\\tlength\\tsequence\\n")
    ```
    0	14	ATGCCCGGCCCGGC
    1	25	GCGTGCTAGCAATACGATAAACCGG
@@ -116,7 +116,7 @@ Python 4 Problem Set -- Lists and Loops
 
 
    
-14. Have you been commiting you work?
+14. Have you been committing you work?
 
 -----------------
 -----------------
@@ -151,6 +151,6 @@ GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACC
    - split the new formatted sequence on the cut sites, store the resulting fragments in a list
    - iterate over each fragment and report
       - the start position in the original sequence
-      - the end postion in the orginal sequence
+      - the end position in the original sequence
       - the length of each fragemnt
    - sort the fragments by length and print out as they would appear on a agrose gel. (big to little)

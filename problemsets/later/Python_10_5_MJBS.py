@@ -5,7 +5,7 @@ import sys
 
 # Create a new function that calculates the GC content of a DNA sequence.
 # it will take a DNA sequence without spaces and no header as an argument and return the percentage of nucleotides that are a G or C.
-# example percentGC = gc_conent('CGTGCTTTCCACGACGGTGACACGCTTCCCTGGA') or percentGC = gc_content(dna)
+# example percentGC = gc_content('CGTGCTTTCCACGACGGTGACACGCTTCCCTGGA') or percentGC = gc_content(dna)
 DNA_seq = ""
 
 def GC_content(DNA_string):
@@ -45,7 +45,7 @@ try:
                 elif re.findall(r"(^[ATGCN])\S\D[ATGCN]+",line):
                     saving_fasta_in_dir[header] = line
                 else:
-                    raise NotASequenceFileError("A non ATGCN charcter is found in the sequence")
+                    raise NotASequenceFileError("A non ATGCN character is found in the sequence")
             #print(saving_fasta_in_dir)
             for key in saving_fasta_in_dir:
                 print(f" GC content of {saving_fasta_in_dir[key]} is : {GC_content(saving_fasta_in_dir[key])}")
@@ -54,7 +54,7 @@ except IndexError:
 except NotFastaError:
     print("Please provide a file that ends with .fasta, .fa or .nt")
 except NotASequenceFileError:
-    print("A non ATGCN charcter is found in the sequence. Please provide a DNA sesquence .fasta file")
+    print("A non ATGCN character is found in the sequence. Please provide a DNA sesquence .fasta file")
 except IOError as ex:
     print(f"Can't find file: {file}, {ex}")
 

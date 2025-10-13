@@ -3,7 +3,7 @@
 # Python 6 - IO - Problem Set
 # ===================
 
-# 2. Modifiy the script in the previous problem to write the contents to a new file called "Python_06_uc.txt"
+# 2. Modify the script in the previous problem to write the contents to a new file called "Python_06_uc.txt"
 
 in_file = open('Python_06.txt', 'r')
 out_file = open('Python_06_uc.txt', 'w')

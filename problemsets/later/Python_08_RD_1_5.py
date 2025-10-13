@@ -2,7 +2,7 @@
 
 import sys
 
-### 1.  Take a multi-FASTA Python_08.fasta file from user input and calculate the nucleotide composition for each sequence. Use a datastructure to keep count. Print out each sequence name and its compostion in this format seqName\tA_count\tT_count\tG_count\C_count
+### 1.  Take a multi-FASTA Python_08.fasta file from user input and calculate the nucleotide composition for each sequence. Use a datastructure to keep count. Print out each sequence name and its composition in this format seqName\tA_count\tT_count\tG_count\C_count
 
 fasta_file = sys.argv[1]
 

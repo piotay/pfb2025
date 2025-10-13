@@ -19,9 +19,9 @@ E. __Quit Interpreter__
 
 ### Part 2: Use Text Editor (VSCODE or vi)
 
-1. Using a **text editor** (not the interperter), write a script that 
+1. Using a **text editor** (not the interpreter), write a script that 
     - Assigns a value to a variable
-    - Has a [if/else statment](../pfb.md/#logic-control-statements) in which:
+    - Has a [if/else statement](../pfb.md/#logic-control-statements) in which:
        - It prints out a confirmation of truth if the value is true, like "Aye Captain" or something less sea worthy
        - It prints out "Not True" if the value is not true. (so boring)
 

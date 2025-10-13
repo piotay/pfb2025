@@ -20,9 +20,9 @@ for line in input_file:
     # By incrementing our line_number variable *before* we print
     # its value, we ensure a 1-based count (first line is line 1)
     line_number += 1
-    for occurance in pattern.finditer(line):
+    for occurrence in pattern.finditer(line):
         # let's assume we want 1-based positions:
-        print(f'{occurance.group()} at line {line_number}, position {occurance.start()+1}')
+        print(f'{occurrence.group()} at line {line_number}, position {occurrence.start()+1}')
 
 # nice and tidy:
 input_file.close()

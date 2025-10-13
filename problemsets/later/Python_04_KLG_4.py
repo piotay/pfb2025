@@ -92,6 +92,6 @@ print("Odds cumsum:", odds, "Evens cumsum:", evens)
 # 8	ATGGGCCC
 # Use list comprehension to generate a list of tuples. The tuples should contain sequences and lengths from the previous problem. Print out the length and the sequence (i.e., "4\tATGC\n"). A list of tuples looks like this [(4,'ATGC'),(2,'GC')].
 
-# Modify the script from #11 so that you also print out the number (postion in the list) of each sequence (i.e., "1\t4\tACGT\n")
+# Modify the script from #11 so that you also print out the number (position in the list) of each sequence (i.e., "1\t4\tACGT\n")
 
-# Have you been commiting you work?
+# Have you been committing you work?

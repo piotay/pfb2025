@@ -43,13 +43,13 @@
        ...: GTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAG
        ...: CACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCG"
 
-    In [2]: num_A = dna.count('A')  # use the str.count() method to count the occurances of 'A'
+    In [2]: num_A = dna.count('A')  # use the str.count() method to count the occurrences of 'A'
 
-    In [3]: num_T = dna.count('T')  # use the str.count() method to count the occurances of 'T'
+    In [3]: num_T = dna.count('T')  # use the str.count() method to count the occurrences of 'T'
 
-    In [4]: num_G = dna.count('G')  # use the str.count() method to count the occurances of 'G'
+    In [4]: num_G = dna.count('G')  # use the str.count() method to count the occurrences of 'G'
 
-    In [5]: num_C = dna.count('C')  # use the str.count() method to count the occurances of 'C'
+    In [5]: num_C = dna.count('C')  # use the str.count() method to count the occurrences of 'C'
 
     In [6]: print(f"A: {num_A:d}, T: {num_T:d}, G: {num_G:d}, C: {num_C:d}")
     A: 167, T: 187, G: 218, C: 270

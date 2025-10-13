@@ -5,7 +5,7 @@
 #    c. uses the object organism attribute to retrieve and print the organism.
 
 
-# Our Sequence class will inheret generic object methods from the object
+# Our Sequence class will inherit generic object methods from the object
 # class
 class Sequence(object):  
     def __init__(self, name=None, sequence='', organism=None):

@@ -101,7 +101,7 @@ print(mySet2)
 The differences is that when using the "set" command, each item in the string becomes a separate item in the set
 
 # Problem 11
-Write a script to find the intersection, difference, union, and symetrical difference between these two sets.
+Write a script to find the intersection, difference, union, and symmetrical difference between these two sets.
 
 ```
 Set_A = set(['3','14','15','9','26','5','35','9'])

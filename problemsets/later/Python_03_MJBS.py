@@ -6,10 +6,10 @@ print("A sequence in Python is a group of characters defined in between quotes")
 
 DNA_string= "GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCG"
 
-print("The legth of the DNA string is: ", len(DNA_string))
+print("The length of the DNA string is: ", len(DNA_string))
 print("the class of the DNA string is: ", type(DNA_string))
 
-# 3. M ake sure to commit your changes along the way. You can wait until the end to push them to your remote repo, if you like, or you can do it now. It is probably smart to commit after each problem set question.
+# 3. Make sure to commit your changes along the way. You can wait until the end to push them to your remote repo, if you like, or you can do it now. It is probably smart to commit after each problem set question.
 	#Using Terminal
 		#git add Python_03.py
 		#git commit -m "Adding problem set 3 of Python"
@@ -45,7 +45,7 @@ print("The number of C's in DNA is",numC)
 bird = "chicken"
 print(bird.upper())
 
-#6.  Create a script with a text editor that counts the number of A's, T's, C's, and G's irregardless of case: a. start with a string that you know how many of each nucleotide there are like, 'ATTGGGCCCC' A=1, T=2, G=3, C=4. This is a postive control. b. only after you have tested your script with your postive control then run with an unknown sequence:
+#6.  Create a script with a text editor that counts the number of A's, T's, C's, and G's irregardless of case: a. start with a string that you know how many of each nucleotide there are like, 'ATTGGGCCCC' A=1, T=2, G=3, C=4. This is a positive control. b. only after you have tested your script with your positive control then run with an unknown sequence:
 
 dna1 = "GATGGGATTggggttttccccTCCCATGTGCTCAAGACTGGCGCTaaaaGttttGAGCTTCTCaaaaGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCggggACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGccccCTCTGAGTCAGGAAACAttttCAGACCTATGGAAACTACTTCCTGaaaaCAACGTTCTGTccccCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTccccGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTccccCCGTGGccccTGCACCAGCAGCTCCTACACCGGCGGccccTGCACCAGccccCTCCTGGccccTGTCATCTTCTGTCCCTTCCCAGaaaaCCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTccccTGCCCTCAACAAGATGttttGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACAccccCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGccccCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGccccTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACttttCG"
 DNA1 = dna1.upper()
@@ -55,7 +55,7 @@ DNA1_G = DNA1.count("G")
 DNA1_C = DNA1.count('C')
 print(f"The number of A's in DNA is {DNA1_A}, the number of T's is {DNA1_T}, the number of G's is {DNA1_G}, and the number of C's {DNA1_C} ")
 
-#7 Find and replace all instances of 'T' with 'U' in this DNA sequence. Start with a small test sequence, postive conrtol, to make sure you are converting all the T's to U's.
+#7 Find and replace all instances of 'T' with 'U' in this DNA sequence. Start with a small test sequence, positive conrtol, to make sure you are converting all the T's to U's.
 
 dna2 = " GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCG"
 rna2 = dna2.replace('T','U')
@@ -69,7 +69,7 @@ RNA3 = DNA3.replace('T', 'U')
 print("Replaced again T with U's:", RNA3)
 
 
-#Write a script that calculates the AT content in this DNA string. AT content is the proportion of bases that are either A or T. You will need to use some mathmatical functions as well as a Python function. It is ALWAYS a good idea to test your code with test data. For example, the below sequence is long and you don't know for sure how many As and Ts are present. Test your code with a DNA string that you KNOW the correct answer. In AATTGGCCA you know you have 3 As and 2 Ts.
+#Write a script that calculates the AT content in this DNA string. AT content is the proportion of bases that are either A or T. You will need to use some mathematical functions as well as a Python function. It is ALWAYS a good idea to test your code with test data. For example, the below sequence is long and you don't know for sure how many As and Ts are present. Test your code with a DNA string that you KNOW the correct answer. In AATTGGCCA you know you have 3 As and 2 Ts.
 #Now add in lines of code to calculate GC content of the above DNA string. Run with test data first!!"""
 toyseq = "AATTGGCCA"
 def AT_content_calculator(seq):
@@ -106,7 +106,7 @@ print("number of G's in substring is:",seq_to_cut[101:201].count('G'))
 seq_to_CUT = "GATGGGATTggggttttccccTCCCATGTGCTCAAGACTGGCGCTaaaaGttttGAGCTTCTCaaaaGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCggggACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGccccCTCTGAGTCAGGAAACAttttCAGACCTATGGAAACTACTTCCTGaaaaCAACGTTCTGTccccCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTccccGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTccccCCGTGGccccTGCACCAGCAGCTCCTACACCGGCGGccccTGCACCAGccccCTCCTGGccccTGTCATCTTCTGTCCCTTCCCAGaaaaCCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTccccTGCCCTCAACAAGATGttttGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACAccccCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGccccCACCATGAGCGCT"
 print("number of G's in substring is:",seq_to_cut[101:201].upper().count('G'))
 
-# 13. Write a new script that prints out the reverse complement of the above DNA string. Hint for reverse. Use string formating for printing.
+# 13. Write a new script that prints out the reverse complement of the above DNA string. Hint for reverse. Use string formatting for printing.
 above_DNA_string = seq_to_cut[101:201].upper()
 complement = ""
 def get_complement_seq(seq):
