@@ -121,11 +121,11 @@ Python does not allow punctuation characters such as `@`, `$`, and `%` within a 
 ### Naming conventions for Python Variable Names
 
  * The first character is lowercase, unless it is a name of a class. Classes should begin with an uppercase characters (ex. `Seq`).
- * Sometimes you'll see variable names starting with one or two underscores in python libraries. These mean private and strong private variables respectively. (ex. `_private` or `__private`). But you don't need to worry about writing these.
+ * Sometimes you'll see variable names starting with one or two underscores in python libraries. We are not going to discuss these further.
  * Python language-defined special names begin and end with two underscores (ex. `__file__` which is the name of the current python file).
 
 
-Picking good variable names for the objects you name yourself is very important. Don't call your variables things like `items` or `my_list` or `data` or `var`. Except for where you have a very simple piece of code, or you are plotting a graph, don't call your objects `x` or `y` either. All these name examples are not descriptive of what kind of data you will find in the variable or object. Worse is to call a variable that contains gene names as `sequences`. Why is this such a bad idea? Think about what would happen if you filled your car up at a store labelled 'gas station' that sold lemonade. In computer science, names should always accurately describe the object they are attached to. This reduces possibility of bugs in your code, makes it much easier to understand if you come back to it after six months or share your code with someone, and makes it faster to write code that works right. Even though it takes a bit of time and effort to think up a good name for an object, it will prevent so many problems in the future!
+Picking good variable names for the objects you name yourself is very important. Don't call your variables things like `items` or `my_list` or `data` or `var`. Except for where you have a very simple piece of code, or you are plotting a graph, don't call your objects `x` or `y` either. All these name examples are not descriptive of what kind of data you will find in the variable or object. Worse is to call a variable that contains gene names as `sequences`. Why is this such a bad idea? In computer science, names should always accurately describe the object they are attached to. This reduces possibility of bugs in your code, makes it much easier to understand if you come back to it after six months or share your code with someone, and makes it faster to write code that works right. Even though it takes a bit of time and effort to think up a good name for an object, it will prevent so many problems in the future!
 
 ### Reserved Words
 
@@ -2586,7 +2586,7 @@ Code:
 genes={'Brca1': 'TTTAA', 'TP53': 'AAATT'}
 for gene in sorted(genes, key=genes.get, reverse=True):
   print(gene, genes[gene])
-``` 
+```
 
 Output:  
 ```bash
@@ -3560,6 +3560,7 @@ When a match is not found:
 * `re.findall()` function returns an empty list
 * `re.finditer()` returns an _iterator_ that will return no values upon evaluation
   
+
 All of the preceding values will evaluate to `False` in a Boolean context.
 
 ```python
@@ -4542,7 +4543,7 @@ This prints:
 > Each piece of the <dict_items> object, a single (key,value) tuple, gets passed into the `lambda` and that one tuple is stored in `kmers_tuple`  
 > The expression that acts on the variable is `kmers_tuple[1]`.  
 > This expression returns the value at index 1 of the tuple to the sort. This value is the count.  
- 
+
 Instead of saving to a new dictionary, each sorted key,value pair can be used in a loop.  
 Code:  
 ```python
