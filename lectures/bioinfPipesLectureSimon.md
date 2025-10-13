@@ -323,7 +323,7 @@ with open(blast_out,'r') as blast_results:
         evalue = float(fields[10]) # this will be a string because 
                             # we read in from a file
                             # don't forget to convert to float
-        # collect hits and evaluates into dictionary
+        # collect hits and their E-values into dictionary
         if query not in homologs:
             homologs[query] = [ (subject, evalue) ]
         else:
