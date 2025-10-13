@@ -471,6 +471,7 @@ More often, you'll want to count the number of lines in a big file and save the 
 (~) 63% wc big_file.fasta
       2943    2998     419272
 (~) 64% wc big_file.fasta > count.txt
+(~) 65% 
 ```
 
 Now if you `cat` the file _count.txt_, you'll see that the data has been recorded.
