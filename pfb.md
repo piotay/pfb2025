@@ -380,7 +380,7 @@ In Python we can write statements that perform mathematical calculations. To do 
 | `/`      | Division                                                     | `3/2`            | `1.5`         |
 | `%`      | Modulus (divides left operand by right operand and returns the remainder) | `3%2`            | `1`           |
 | `**`     | Exponent                                                     | `3**2`           | `9`           |
-| `//`     | Floor Division (result is the quotient with digits after the decimal point removed. If one of the operands is negative, the result is rounded to an int away from zero | `3//2`  `-11//3` | `1`       `-4` |
+| `//`     | Floor Division (result is the quotient with digits after the decimal point removed. If one of the operands is negative, the result is rounded to the integer further away from zero | `3//2`  `-3//2` | `1`       `-2` |
 
 
 __Modulus__
