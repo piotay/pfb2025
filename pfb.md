@@ -22,7 +22,7 @@ Python has
 
 **Objects** group various data and functions (methods) that act on that data into a convenient and coherent programming paradigm.
 
-**** are a way to encapsulate (organize) variables and functions. Objects get their variables and methods from the class they belong to. 
+**Classes** are a way to encapsulate (organize) variables and functions. Objects get their variables and methods from the class they belong to. 
 
 **Methods** are just functions that belong to a class. Objects that belong to the a class can use methods from that class.
 
