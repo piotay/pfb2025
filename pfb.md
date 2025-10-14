@@ -721,9 +721,16 @@ Here is a list of functions that take numbers as arguments. These do useful thin
 | function          | Description                              |
 | ----------------- | ---------------------------------------- |
 | `abs(x)`          | The absolute value of x: the (positive) distance between x and zero. |
-| `round(x [,n])`   | x rounded to n digits from the decimal point. round() rounds to an even integer if the value is exactly between two integers, so round(0.5) is 0 and round(-0.5) is 0. round(1.5) is 2. **Rounding to a fixed number of decimal places can give unpredictable results.** |
+| `round(x [,n])`   | x rounded to n digits from the decimal point. round() rounds to an even integer if the value is exactly between two integers, so round(0.5) is 0 and round(-0.5) is 0. round(1.5) is 2 |
 | `max(x1, x2,...)` | The largest argument is returned |
 | `min(x1, x2,...)` | The smallest argument is returned        |
+
+ **Rounding to a fixed number of decimal places can give unpredictable results.**  
+> Python's round() function for floats uses a rounding strategy known as "round half to even" (also called "banker's rounding") when a number is exactly equidistant between two possible rounded values (e.g., 2.5, 3.5).  
+
+> In such cases, it rounds to the nearest even number. So, round(2.5) is 2, and round(3.5) is 4.  
+
+> This rule, combined with the floating-point imprecision, can lead to unexpected outcomes. If 2.675 is internally represented as 2.6749999999999999, round(2.675, 2) will round down to 2.67, even though one might intuitively expect 2.68.  
 
 ```python
 >>> abs(2.3)
