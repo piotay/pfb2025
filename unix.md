@@ -716,7 +716,7 @@ Here are a few more advanced Unix commands that are very useful, and when you ha
 
 ## Text Editors
 
-It is often necessary to create and write to a file while using the terminal. This makes it essential to use a terminal text editor. There are many text editors out there. Some of our favorite are Emacs and vim. We are going to start you out with a simple text editor called  `vi`
+Files need to be created and edited.  There are many text editors out there. Some of our favorite are Emacs and vi and visual studio code. Some text editors have a point and click interface while others are command line text editors that use only key strokes as commands. Both are useful in different ways. 
 
 ## Introduction to vi
 
