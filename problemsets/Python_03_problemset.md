@@ -23,13 +23,13 @@ GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACC
   
 5. As you write scripts make sure to commit your work along the way. You can wait until the end to push them to your remote repo, or you can do it now. It is probably smart to commit after each problem set question.
    
-6. Write out the steps, in prose, that you will to count the number of A's, T's, C's, and G's regardless of case. These can become comments. Start with:
+6. Write out the steps, in prose, that you will do to count the number of A's, T's, C's, and G's regardless of case. These can become comments. Start with:
    \# create a variable that stores a string that represents a DNA sequence.  
    \# do something about the case of the nucleotide characters  
    \# count A's  
    \# fill in the rest of the steps
    
-7.  Continue writing your **script with a text editor** that counts the number of A's, T's, C's, and G's regardless of case:  
+7. Continue writing your **script with a text editor** that counts the number of A's, T's, C's, and G's regardless of case:  
    a. Create a short string with a known composition of nucleotides, for example, 'ATTGGGCCCC' A=1, T=2, G=3, C=4. This is a positive control.  
    b. Test your script by running with the positive control.  
    c. Run with this unknown/experimental sequence:  
@@ -49,8 +49,8 @@ The above sequence has these counts, check your output:
 Canonically, when double-stranded DNA is transcribed into a single stranded RNA molecule, the resulting mRNA sequence is equivalant to coding DNA nucleotides from the forward strand with the T's changed to U's. 
  ![image from Khan Academy](../images/overview_transcription.png)
 
-  Write a script to find and replace all instances of 'T' with 'U' in this DNA sequence. Begin with thinking and writing down your steps.
-  - Start with this small test sequence (i.e., positive control): `ATGCATGC`
+  Write a script to find and replace all instances of 'T' with 'U' in this DNA sequence. Begin with thinking about what you need your code to do and write down the steps. Fill in with actual code. 
+  - First, run your code with this small test sequence (i.e., **positive control**): `ATGCATGC`
   - The test should return `AUGCUGC`
   - Now run your code with this DNA sequence:
 ```
@@ -71,13 +71,17 @@ the result should be:
 GAUGGGAUUGGGGUUUUCCCCUCCCAUGUGCUCAAGACUGGCGCUAAAAGUUUUGAGCUUCUCAAAAGUCUAGAGCCACCGUCCAGGGAGCAGGUAGCUGCUGGGCUCCGGGGACACUUUGCGUUCGGGCUGGGAGCGUGCUUUCCACGACGGUGACACGCUUCCCUGGAUUGGCAGCCAGACUGCCUUCCGGGUCACUGCCAUGGAGGAGCCGCAGUCAGAUCCUAGCGUCGAGCCCCCUCUGAGUCAGGAAACAUUUUCAGACCUAUGGAAACUACUUCCUGAAAACAACGUUCUGUCCCCCUUGCCGUCCCAAGCAAUGGAUGAUUUGAUGCUGUCCCCGGACGAUAUUGAACAAUGGUUCACUGAAGACCCAGGUCCAGAUGAAGCUCCCAGAAUUCGCCAGAGGCUGCUCCCCCCGUGGCCCCUGCACCAGCAGCUCCUACACCGGCGGCCCCUGCACCAGCCCCCUCCUGGCCCCUGUCAUCUUCUGUCCCUUCCCAGAAAACCUACCAGGGCAGCUACGGUUUCCGUCUGGGCUUCUUGCAUUCUGGGACAGCCAAGUCUGUGACUUGCACGUACUCCCCUGCCCUCAACAAGAUGUUUUGCCAACUGGCCAAGACCUGCCCUGUGCAGCUGUGGGUUGAUUCCACACCCCCGCCCGGCACCCGCGUCCGCGCCAUGGCCAUCUACAAGCAGUCACAGCACAUGACGGAGGUUGUGAGGCGCUGCCCCCACCAUGAGCGCU
 ```
 
-9. Write a script that calculates the AT content in the DNA string below.  
-AT content is the **proportion** of bases that are either A or T.  
+9.** Calculating GC content of DNA.**: GC content can be informative for many reasons. One is that the genomes of all organisms do not have the same GC content, it varies inbetween different organisms. For example, the average GC-content in human genomes is 41%, in Saccharomyces cerevisiae is 38%, Arabidopsis thaliana is 36%. (from https://en.wikipedia.org/wiki/GC-content). 
+
+![PMID:20530252](../images/gc-content.jpeg)
+    
+Write a script that calculates the GC content in the DNA string below.  
+GC content is the **proportion** of bases that are either G or C.  
 It is ALWAYS a good idea to test your code with test data.  
-For example, the below sequence is long and you don't know for sure how many As and Ts are present.  
+For example, the below sequence is long and you don't know for sure how many Gs and Cs are present.  
 Test your code with a DNA string that you KNOW the correct answer.  
-In 'AATTGGCCA' you know you have 3 As and 2 Ts.  
-Add code to calculate the GC content in addition to the AT content.  
+In 'AATTGGCCA' you know you have 2 Gs and 2 Cs.  
+Add code to calculate the AT content in addition to the GC content.  
 
 ```
 GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCG
