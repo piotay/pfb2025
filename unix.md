@@ -599,10 +599,10 @@ Pipe the output of `ls` to the `more` program, which shows a page at a time.  If
 
 __Monitor a Growing File for a Pattern__
 
-Pipe the output of `tail -f` (which monitors a growing file and prints out the new lines) to `grep`.  For example, this will monitor the `/var/log/syslog`file for the appearance of e-mails addressed to 'mzhang':
+Pipe the output of `tail -f` (which monitors a growing file and prints out the new lines) to `grep`.  For example, this will monitor the `/var/log/syslog`file for the appearance of e-mails addressed to 'frankturner':
 
 ```
-(~) 70% tail -f /var/log/syslog | grep dbrown
+(~) 70% tail -f /var/log/syslog | grep frankturner
 ```
 
 <div style="page-break-after: always;"></div>  
