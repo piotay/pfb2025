@@ -7,19 +7,22 @@ GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACC
 ```
 
 
-3. Make sure to commit your changes along the way. You can wait until the end to push them to your remote repo, or you can do it now. It is probably smart to commit after each problem set question. 
 
-4. In the **interpreter**:
+
+3. In the **interpreter**:
 	- Create a variable named 'DNA' which contains the sequence above.
 	- Count the number of A's  
 	- Count the number of T's  
 	- Count the number of G's
 	- Count the number of C's
 
-5. In the **interpreter**:
+4. In the **interpreter**:
     - Create a variable named 'bird' with the contents 'chicken'
     - Convert the contents of 'bird' to be uppercase and print
     - **Exit the interpreter**
+  
+5. As you write scripts make sure to commit your work along the way. You can wait until the end to push them to your remote repo, or you can do it now. It is probably smart to commit after each problem set question.
+   
 6. Create a **script with a text editor** that counts the number of A's, T's, C's, and G's regardless of case:  
    a. Create a short string with a known composition of nucleotides, for example, 'ATTGGGCCCC' A=1, T=2, G=3, C=4. This is a positive control.  
    b. Test your script by running with the positive control.  
@@ -35,7 +38,9 @@ The above sequence has these counts, check your output:
  |A|167|  
  |C|270|  
 
-7. Representing DNA as RNA. Canonically, when double-stranded DNA is transcribed into a single stranded RNA molecule, the resulting mRNA sequence is equivalant to coding DNA nucleotides from the forward strand with the T's changed to U's. 
+7. __Representing DNA as RNA__
+
+Canonically, when double-stranded DNA is transcribed into a single stranded RNA molecule, the resulting mRNA sequence is equivalant to coding DNA nucleotides from the forward strand with the T's changed to U's. 
  ![image from Khan Academy](../images/overview_transcription.png)
 
   Find and replace all instances of 'T' with 'U' in this DNA sequence.
