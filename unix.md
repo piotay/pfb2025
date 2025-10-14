@@ -1082,6 +1082,16 @@ cd ~/PFB_problemsets/.git/hooks/
 curl -O https://raw.githubusercontent.com/prog4biol/pfb2025/master/setup/pre-commit
 ```
 
+### One-time Git setup ###
+
+Before using a new installation of Git, you should tell Git your name and email address. This information will be used each time you execute
+`git commit`. If you skip this step Git will work, but it will give you warning messages.
+
+```
+git config --global user.name "Your Name"
+git config --global user.email your_email_address@example.com
+```
+
 ### Creating a new repository
 
 A repository is a project that contains all of the project files, and stores each file's revision history. Repositories can have multiple collaborators. Repositories usually have two components, one __remote__ and one __local__.
