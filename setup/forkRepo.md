@@ -34,8 +34,7 @@ Now that your forked repo is cloned and configured with "upstream", you have a t
 	      V                  |
              [local/pfb2022] ----+
 ```
-
-You may now add changes to your local repo. To do this, follow these steps:
+1. Check in the browser if your fork is behind the upstream, if it is, click SYNC.
 
 1. Pull down to your local repo any changes that other contributors may have synced with the upstream remote repo:
    **NOTE: It is very important that you do this *every* time you want to `add`/`commit`/`push` changes to your local repo** 
