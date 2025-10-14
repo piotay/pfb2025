@@ -28,7 +28,7 @@ Python has
 
 ## Running Python
 
-There are two versions of Python: Python 2 and Python 3. We will be using 3. This version fixes some of the problems with Python 2 and breaks some other things. A lot of code has already been written for Python 2 (it's older), but going forwards, all new code development uses Python 3.
+There are two versions of Python: Python 2 and Python 3. We will be using 3. This version fixes some of the problems with Python 2 and breaks some other things. A lot of code has already been written for Python 2 (it's older), but going forward, all new code development uses Python 3.
 
 
 ### Interactive Interpreter
@@ -85,7 +85,7 @@ If you make your script executable, you can run it without typing `python3` firs
 
 You can look back at the unix lecture to learn more about permissions.
 
-We also need to add a line at the beginning of the script that tells the shell to run python3 to interpret the script. This line starts with `#`, so it looks like a comment to python. The `!` (exclamation mark or bang) is important as is the space between `env` and `python3`. The program `/usr/bin/env` looks for where `python3` is installed and runs the script with `python3`. The details may seem a bit complex, but you can just copy and paste this 'magic' line.
+We also need to add a line at the beginning of the script that tells the shell to run python3 to interpret the script. This line starts with `#`, so it looks like a comment to Python. The `!` (exclamation mark or bang) is important as is the space between `env` and `python3`. The program `/usr/bin/env` looks for where `python3` is installed and runs the script with `python3`. The details may seem a bit complex, but you can just copy and paste this 'magic' line.
 
 The file hello.py now looks like this
 
@@ -120,16 +120,16 @@ Python does not allow punctuation characters such as `@`, `$`, and `%` within a 
 
 ### Naming conventions for Python Variable Names
 
- * The first character is lowercase, unless it is a name of a class. Classes should begin with an uppercase characters (ex. `Seq`).
+ * The first character is lowercase, unless it is a name of a class. Classes should begin with an uppercase character (ex. `Seq`).
  * Sometimes you'll see variable names starting with one or two underscores in python libraries. We are not going to discuss these further.
  * Python language-defined special names begin and end with two underscores (ex. `__file__` which is the name of the current python file).
 
 
-Picking good variable names for the objects you name yourself is very important. Don't call your variables things like `items` or `my_list` or `data` or `var`. Except for where you have a very simple piece of code, or you are plotting a graph, don't call your objects `x` or `y` either. All these name examples are not descriptive of what kind of data you will find in the variable or object. Worse is to call a variable that contains gene names as `sequences`. Why is this such a bad idea? In computer science, names should always accurately describe the object they are attached to. This reduces possibility of bugs in your code, makes it much easier to understand if you come back to it after six months or share your code with someone, and makes it faster to write code that works right. Even though it takes a bit of time and effort to think up a good name for an object, it will prevent so many problems in the future!
+Picking good variable names for the objects you name yourself is very important. Don't call your variables things like `items` or `my_list` or `data` or `var`. Except for when you have a very simple piece of code, or you are plotting a graph, don't call your objects `x` or `y` either. All these name examples are not descriptive of what kind of data you will find in the variable or object. Worse is to call a variable that contains gene names as `sequences`. Why is this such a bad idea? In computer science, names should always accurately describe the object they are attached to. This reduces possibility of bugs in your code, makes it much easier to understand if you come back to it after six months or share your code with someone, and makes it faster to write code that works right. Even though it takes a bit of time and effort to think up a good name for an object, it will prevent so many problems in the future!
 
 ### Reserved Words
 
-The following is a list of Python keywords. These are special words that already have a purpose in python and therefore should not be used as variable names. If you do by accident, it overwrites the python function and causes problems.
+The following is a list of Python keywords. These are special words that already have a purpose in python and therefore should not be used as variable names. If you do so by accident, it overwrites the Python function and causes problems.
 
 ```
 and         exec        not      dict
@@ -584,7 +584,7 @@ if 'AGC' in dna:
 ```
 Returns:  
 ```
-found AGC in your dna sequence
+Found AGC in your dna sequence
 ```
 
 **else**
@@ -721,7 +721,7 @@ Here is a list of functions that take numbers as arguments. These do useful thin
 | function          | Description                              |
 | ----------------- | ---------------------------------------- |
 | `abs(x)`          | The absolute value of x: the (positive) distance between x and zero. |
-| `round(x [,n])`   | x rounded to n digits from the decimal point. round() rounds to an even integer if the value is exactly between two integers, so round(0.5) is 0 and round(-0.5) is 0. round(1.5) is 2 |
+| `round(x,n)`   | x rounded to n digits from the decimal point. round() rounds to an even integer if the value is exactly between two integers, so round(0.5) is 0 and round(-0.5) is 0. round(1.5) is 2 |
 | `max(x1, x2,...)` | The largest argument is returned |
 | `min(x1, x2,...)` | The smallest argument is returned        |
 
