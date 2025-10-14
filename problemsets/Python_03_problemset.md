@@ -35,7 +35,10 @@ The above sequence has these counts, check your output:
  |A|167|  
  |C|270|  
 
-7. Find and replace all instances of 'T' with 'U' in this DNA sequence.
+7. Representing DNA as RNA. Canonically, when double-stranded DNA is transcribed into a single stranded RNA molecule, the resulting mRNA sequence is equivalant to coding DNA nucleotides from the forward strand with the T's changed to U's. 
+ ![image from Khan Academy](../images/overview_transcription.png)
+
+  Find and replace all instances of 'T' with 'U' in this DNA sequence.
   - Start with this small test sequence (i.e., positive control): `ATGCATGC`
   - The test should return `AUGCUGC`
   - Now run your code with this DNA sequence:
@@ -108,6 +111,8 @@ Reverse Complement Overview
 ___
 A sequence and its reverse complement represent the two strands of double stranded DNA or RNA. To calculate the reverse complement of DNA the nucleotides need to be translated into the complementary nucleotide, A -> T, T->A, G->C, and C->G, and the entire sequence needs to be reversed.  
 
+![image from www.wikihow.life](../images/revcomp.jpg)
+
 To read more about reverse complements and to test your output see [Qiagen's page on reverse complements](https://www.qiagen.com/us/applications/enzymes/tools-and-calculators/reverse-complement-converter)
  
 > ```
@@ -117,7 +122,13 @@ To read more about reverse complements and to test your output see [Qiagen's pag
 > ```
 ___  
 
-Write a script to generate and print the reverse complements of a DNA sequence. [Hint for reverse](http://bfy.tw/EXap). Use string formatting for printing.  
+You will be writing a script to generate and print the reverse complement of a nucleotide sequence. Write out the steps you will take in prose. These can become comments. Start with  
+  
+   \# create a variable that stores a string that represents a DNA sequence.  
+   \# fill in the rest of the steps.    
+
+Now fill in the code under your comments to write a script to generate and print the reverse complements of a DNA sequence. [Hint for reverse](http://bfy.tw/EXap). Use string formatting for printing.  
+
 Use this sequence:
 ```text
 GATGGGATTggggttttccccTCCCATGTGCTCAAGACTGGCGCTaaaaGttttGAGCTTCTCaaaaGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCggggACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGccccCTCTGAGTCAGGAAACAttttCAGACCTATGGAAACTACTTCCTGaaaaCAACGTTCTGTccccCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTccccGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTccccCCGTGGccccTGCACCAGCAGCTCCTACACCGGCGGccccTGCACCAGccccCTCCTGGccccTGTCATCTTCTGTCCCTTCCCAGaaaaCCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTccccTGCCCTCAACAAGATGttttGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACAccccCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGccccCACCATGAGCGCT
@@ -131,7 +142,10 @@ AGCGCTCATGGTGGGGGCAGCGCCTCACAACCTCCGTCATGTGCTGTGACTGCTTGTAGATGGCCATGGCGCGGACGCGG
 
 
 
-14. Write a script to find the starting nucleotide position of an [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) `GAATTC` site in the below DNA sequence. Remember DNA sequences start with a 1 and a python string starts with an index of 0. Run with test data first.
+14. EcoRI is a restriction enzyme that cuts a specific paladromic double stranded DNA sequence, `GAATTC`, on both strands between the G and the A, resulting in single-stranded staggered overhangs: 
+    ![https://en.wikipedia.org/wiki/EcoRI](../images/2880px-EcoRI_restriction_enzyme_recognition_site.svg.png)
+
+     Write a script to find the starting nucleotide position of an [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) `GAATTC` site in the below DNA sequence. Remember DNA sequences start with a 1 and a python string starts with an index of 0. Run with test data first.
 
 ```
 GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCG
