@@ -73,7 +73,7 @@ GAUGGGAUUGGGGUUUUCCCCUCCCAUGUGCUCAAGACUGGCGCUAAAAGUUUUGAGCUUCUCAAAAGUCUAGAGCCACC
 
 9.** Calculating GC content of DNA.**: GC content can be informative for many reasons. One is that the genomes of all organisms do not have the same GC content, it varies inbetween different organisms. For example, the average GC-content in human genomes is 41%, in Saccharomyces cerevisiae is 38%, Arabidopsis thaliana is 36%. (from https://en.wikipedia.org/wiki/GC-content). 
 
-![PMID:20530252](../images/gc-content.jpeg)
+![PMID:20530252](../images/gc-content.jpg)
     
 Write a script that calculates the GC content in the DNA string below.  
 GC content is the **proportion** of bases that are either G or C.  
