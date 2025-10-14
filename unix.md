@@ -914,7 +914,7 @@ Remember to enter into __Command Mode__ with `<esc>` key
 |-----------|---------|  
 | `:set number` | display line numbers |
 | `:set nonumber` | turn off line numbers |  
-| `:/[search text]` | find [this text] in your file |  
+| `/[search text]` | find [this text] in your file |  
 | `n` | go to next occurrence of your search result |
 
 ### Mug of vi
