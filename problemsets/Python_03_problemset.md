@@ -7,23 +7,32 @@ GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACC
 ```
 
 
-3. Make sure to commit your changes along the way. You can wait until the end to push them to your remote repo, or you can do it now. It is probably smart to commit after each problem set question. 
 
-4. In the **interpreter**:
+
+3. In the **interpreter**:
 	- Create a variable named 'DNA' which contains the sequence above.
 	- Count the number of A's  
 	- Count the number of T's  
 	- Count the number of G's
 	- Count the number of C's
 
-5. In the **interpreter**:
+4. In the **interpreter**:
     - Create a variable named 'bird' with the contents 'chicken'
     - Convert the contents of 'bird' to be uppercase and print
     - **Exit the interpreter**
-6. Create a **script with a text editor** that counts the number of A's, T's, C's, and G's regardless of case:
-   a. Create a short string with a known composition of nucleotides, for example, 'ATTGGGCCCC' A=1, T=2, G=3, C=4. This is a positive control.
-   b. Test your script by running with the positive control.
-   c. Run with this unknown/experimental sequence:
+  
+5. As you write scripts make sure to commit your work along the way. You can wait until the end to push them to your remote repo, or you can do it now. It is probably smart to commit after each problem set question.
+   
+6. Write out the steps, in prose, that you will to count the number of A's, T's, C's, and G's regardless of case. These can become comments. Start with:
+   \# create a variable that stores a string that represents a DNA sequence.  
+   \# do something about the case of the nucleotide characters  
+   \# count A's  
+   \# fill in the rest of the steps
+   
+7.  Continue writing your **script with a text editor** that counts the number of A's, T's, C's, and G's regardless of case:  
+   a. Create a short string with a known composition of nucleotides, for example, 'ATTGGGCCCC' A=1, T=2, G=3, C=4. This is a positive control.  
+   b. Test your script by running with the positive control.  
+   c. Run with this unknown/experimental sequence:  
 ```
 GATGGGATTggggttttccccTCCCATGTGCTCAAGACTGGCGCTaaaaGttttGAGCTTCTCaaaaGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCggggACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGccccCTCTGAGTCAGGAAACAttttCAGACCTATGGAAACTACTTCCTGaaaaCAACGTTCTGTccccCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTccccGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTccccCCGTGGccccTGCACCAGCAGCTCCTACACCGGCGGccccTGCACCAGccccCTCCTGGccccTGTCATCTTCTGTCCCTTCCCAGaaaaCCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTccccTGCCCTCAACAAGATGttttGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACAccccCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGccccCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGccccTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACttttCG
 ```
@@ -35,7 +44,12 @@ The above sequence has these counts, check your output:
  |A|167|  
  |C|270|  
 
-7. Find and replace all instances of 'T' with 'U' in this DNA sequence.
+7. __Representing DNA as RNA__
+
+Canonically, when double-stranded DNA is transcribed into a single stranded RNA molecule, the resulting mRNA sequence is equivalant to coding DNA nucleotides from the forward strand with the T's changed to U's. 
+ ![image from Khan Academy](../images/overview_transcription.png)
+
+  Write a script to find and replace all instances of 'T' with 'U' in this DNA sequence. Begin with thinking and writing down your steps.
   - Start with this small test sequence (i.e., positive control): `ATGCATGC`
   - The test should return `AUGCUGC`
   - Now run your code with this DNA sequence:
@@ -48,7 +62,7 @@ GAUGGGAUUGGGGUUUUCCCCUCCCAUGUGCUCAAGACUGGCGCUAAAAGUUUUGAGCUUCUCAAAAGUCUAGAGCCACC
 ```
 
     
-8. Find and replace all instances of 'T' with 'U' in this DNA sequence. **Notice that there are both uppercase and lowercase characters**. Start with a small test sequence that contains both upper and lower cased characters ('AtGcaTgC'). Confirm that you are generating the correct resulting sequence ('AUGCAUGC').
+8. Find and replace all instances of 'T' with 'U' in this DNA sequence. **Notice that there are both uppercase and lowercase characters**. Start with a small test sequence that contains both upper and lower cased characters ('AtGcaTgC'). Confirm that you are generating the correct resulting sequence ('AUGCAUGC'). Begin with thinking and writing down your steps.
 ```
 GATGGGATTggggttttccccTCCCATGTGCTCAAGACTGGCGCTaaaaGttttGAGCTTCTCaaaaGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCggggACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGccccCTCTGAGTCAGGAAACAttttCAGACCTATGGAAACTACTTCCTGaaaaCAACGTTCTGTccccCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTccccGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTccccCCGTGGccccTGCACCAGCAGCTCCTACACCGGCGGccccTGCACCAGccccCTCCTGGccccTGTCATCTTCTGTCCCTTCCCAGaaaaCCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTccccTGCCCTCAACAAGATGttttGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACAccccCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGccccCACCATGAGCGCT
 ```
@@ -108,6 +122,8 @@ Reverse Complement Overview
 ___
 A sequence and its reverse complement represent the two strands of double stranded DNA or RNA. To calculate the reverse complement of DNA the nucleotides need to be translated into the complementary nucleotide, A -> T, T->A, G->C, and C->G, and the entire sequence needs to be reversed.  
 
+![image from www.wikihow.life](../images/revcomp.jpg)
+
 To read more about reverse complements and to test your output see [Qiagen's page on reverse complements](https://www.qiagen.com/us/applications/enzymes/tools-and-calculators/reverse-complement-converter)
  
 > ```
@@ -117,7 +133,13 @@ To read more about reverse complements and to test your output see [Qiagen's pag
 > ```
 ___  
 
-Write a script to generate and print the reverse complements of a DNA sequence. [Hint for reverse](http://bfy.tw/EXap). Use string formatting for printing.  
+You will be writing a script to generate and print the reverse complement of a nucleotide sequence. Write out the steps you will take in prose. These can become comments. Start with  
+  
+   \# create a variable that stores a string that represents a DNA sequence.  
+   \# fill in the rest of the steps.    
+
+Now fill in the code under your comments to write a script to generate and print the reverse complements of a DNA sequence. [Hint for reverse](http://bfy.tw/EXap). Use string formatting for printing.  
+
 Use this sequence:
 ```text
 GATGGGATTggggttttccccTCCCATGTGCTCAAGACTGGCGCTaaaaGttttGAGCTTCTCaaaaGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCggggACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGccccCTCTGAGTCAGGAAACAttttCAGACCTATGGAAACTACTTCCTGaaaaCAACGTTCTGTccccCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTccccGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTccccCCGTGGccccTGCACCAGCAGCTCCTACACCGGCGGccccTGCACCAGccccCTCCTGGccccTGTCATCTTCTGTCCCTTCCCAGaaaaCCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTccccTGCCCTCAACAAGATGttttGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACAccccCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGccccCACCATGAGCGCT
@@ -131,7 +153,10 @@ AGCGCTCATGGTGGGGGCAGCGCCTCACAACCTCCGTCATGTGCTGTGACTGCTTGTAGATGGCCATGGCGCGGACGCGG
 
 
 
-14. Write a script to find the starting nucleotide position of an [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) `GAATTC` site in the below DNA sequence. Remember DNA sequences start with a 1 and a python string starts with an index of 0. Run with test data first.
+14. EcoRI is a restriction enzyme that cuts a specific paladromic double stranded DNA sequence, `GAATTC`, on both strands between the G and the A, resulting in single-stranded staggered overhangs: 
+    ![https://en.wikipedia.org/wiki/EcoRI](../images/2880px-EcoRI_restriction_enzyme_recognition_site.svg.png)
+
+     Write a script to find the starting nucleotide position of an [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) `GAATTC` site in the below DNA sequence. Remember DNA sequences start with a 1 and a python string starts with an index of 0. Run with test data first.
 
 ```
 GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCG
