@@ -23,7 +23,13 @@ GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACC
   
 5. As you write scripts make sure to commit your work along the way. You can wait until the end to push them to your remote repo, or you can do it now. It is probably smart to commit after each problem set question.
    
-6. Create a **script with a text editor** that counts the number of A's, T's, C's, and G's regardless of case:  
+6. Write out the steps, in prose, that you will to count the number of A's, T's, C's, and G's regardless of case. These can become comments. Start with:
+   \# create a variable that stores a string that represents a DNA sequence.  
+   \# do something about the case of the nucleotide characters  
+   \# count A's  
+   \# fill in the rest of the steps
+   
+7.  Continue writing your **script with a text editor** that counts the number of A's, T's, C's, and G's regardless of case:  
    a. Create a short string with a known composition of nucleotides, for example, 'ATTGGGCCCC' A=1, T=2, G=3, C=4. This is a positive control.  
    b. Test your script by running with the positive control.  
    c. Run with this unknown/experimental sequence:  
@@ -43,7 +49,7 @@ The above sequence has these counts, check your output:
 Canonically, when double-stranded DNA is transcribed into a single stranded RNA molecule, the resulting mRNA sequence is equivalant to coding DNA nucleotides from the forward strand with the T's changed to U's. 
  ![image from Khan Academy](../images/overview_transcription.png)
 
-  Find and replace all instances of 'T' with 'U' in this DNA sequence.
+  Write a script to find and replace all instances of 'T' with 'U' in this DNA sequence. Begin with thinking and writing down your steps.
   - Start with this small test sequence (i.e., positive control): `ATGCATGC`
   - The test should return `AUGCUGC`
   - Now run your code with this DNA sequence:
@@ -56,7 +62,7 @@ GAUGGGAUUGGGGUUUUCCCCUCCCAUGUGCUCAAGACUGGCGCUAAAAGUUUUGAGCUUCUCAAAAGUCUAGAGCCACC
 ```
 
     
-8. Find and replace all instances of 'T' with 'U' in this DNA sequence. **Notice that there are both uppercase and lowercase characters**. Start with a small test sequence that contains both upper and lower cased characters ('AtGcaTgC'). Confirm that you are generating the correct resulting sequence ('AUGCAUGC').
+8. Find and replace all instances of 'T' with 'U' in this DNA sequence. **Notice that there are both uppercase and lowercase characters**. Start with a small test sequence that contains both upper and lower cased characters ('AtGcaTgC'). Confirm that you are generating the correct resulting sequence ('AUGCAUGC'). Begin with thinking and writing down your steps.
 ```
 GATGGGATTggggttttccccTCCCATGTGCTCAAGACTGGCGCTaaaaGttttGAGCTTCTCaaaaGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCggggACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGccccCTCTGAGTCAGGAAACAttttCAGACCTATGGAAACTACTTCCTGaaaaCAACGTTCTGTccccCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTccccGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTccccCCGTGGccccTGCACCAGCAGCTCCTACACCGGCGGccccTGCACCAGccccCTCCTGGccccTGTCATCTTCTGTCCCTTCCCAGaaaaCCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTccccTGCCCTCAACAAGATGttttGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACAccccCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGccccCACCATGAGCGCT
 ```
