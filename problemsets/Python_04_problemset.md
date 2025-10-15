@@ -22,7 +22,7 @@ Python 4 Problem Set -- Lists and Loops
     c. Split `taxa_string` into a list called `taxa_list`. Use `" : "` as your separator.  
     d. Print `taxa_list`.  
     e. Print `taxa_list[1]`, what do you get?  
-    f. Print `type(taxa_string)`. What is it's type? Print `type(taxa_list)`. What is it's type?  
+    f. Print `type(taxa_string)`. What is its type? Print `type(taxa_list)`. What is its type?  
     g. Sort the list alphabetically and print (hint: lookup the function `sorted()`).   
     h. Sort the list by length of each string and print. (The shortest string should be first). [Check out documentation of the key argument](https://www.programiz.com/python-programming/methods/built-in/sorted).  
 
