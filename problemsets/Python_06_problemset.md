@@ -143,10 +143,10 @@ _In the same Ensembl window, follow the steps below to get genes that have been 
 10. Rename the file to "ferret_pigmentation_genes.tsv"
 
 
-__Open each of the three files and add the geneIDs (Gene stable ID) to a Set. One Set per file.__
-
-A. Find all the genes that are not cell proliferation genes.  
-B. Find all genes that are both stem cell proliferation genes and pigment genes.  
+__Write a script that opens each of the three files and add the contents (which are the Gene stable IDs) to a Set. Create one Set per file.__
+  - Then using set methods, indentify all the genes that **are not** cell proliferation genes.
+  - And identify all genes **that are both** stem cell proliferation genes and pigment genes.
+    
 *Note* Make sure to NOT add the header to your set.  
 
 __Now, let do it again with transciption factors.__
@@ -161,13 +161,12 @@ __Now, let do it again with transciption factors.__
 6. Export all results to "File" "TSV" --> GO
 7. Rename the file to "ferret_transcriptionFactors.tsv"
 
-Write a script that creates sets for these lists to find all the genes that are both transcription factors and are involved in stem cell proliferation.  
+__Write a script that creates sets to find all the genes that are both transcription factors and are involved in stem cell proliferation.__  
   - Open these files: 1) the transcription factor gene list file and 2) the stem cell proliferation gene list file.
   - Add each to a Set, one Set per file
-  - Identify all the genes that are transcription factors AND are involved in stem cell proliferation.
+  - Identify all the genes that are transcription factors **AND** are involved in stem cell proliferation.
 
-
-Now compare gene lists on the command line with `comm` command. You might need to `sort` each file first.
+__Now compare gene lists on the command line with `comm` command. You might need to `sort` each file first.__
   - What genes are transcription factors involved in stem cell proliferation?
   - What genes are transcription factors involved in pigmentation?
   - What genes are involved in both stem cell proliferation and pigmentation?
