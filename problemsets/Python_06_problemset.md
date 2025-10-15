@@ -162,13 +162,18 @@ __Now, let do it again with transciption factors.__
 7. Rename the file to "ferret_transcriptionFactors.tsv"
 
 Write a script that creates sets for these lists to find all the genes that are both transcription factors and are involved in stem cell proliferation.  
-  - Open the these files: 1) the transcription factor gene list file and 2) the cell proliferation gene list file.
-  - Add each to a Set, One Set per file
-  - Identify all the genes that are transcription factors and are involved in stem cell proliferation.
+  - Open these files: 1) the transcription factor gene list file and 2) the stem cell proliferation gene list file.
+  - Add each to a Set, one Set per file
+  - Identify all the genes that are transcription factors AND are involved in stem cell proliferation.
 
 
-Now do the same on the command line with `comm` command. You might need to `sort` each file first.
+Now compare gene lists on the command line with `comm` command. You might need to `sort` each file first.
+  - What genes are transcription factors involved in stem cell proliferation?
+  - What genes are transcription factors involved in pigmentation?
+  - What genes are involved in both stem cell proliferation and pigmentation?
+  - Find out more about genes involved in stem cell proliferation and pigmentation by doing some searches on Ensembl to get the gene names and on Google to get more information about how they act in these processes.
 
+     
 Are you still committing your files as you go?
 
 ## Extra: Expand on the nucleotide composition exercise 
