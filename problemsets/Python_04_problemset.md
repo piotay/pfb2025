@@ -136,9 +136,9 @@ ATGGGCCC
 -----------------
 -----------------
 
-1. Sometimes you may need to show that some element or pattern in your DNA sequence is significant and not present by chance. One way to do this is to create 10s of thousands of shuffled sequences and see how many times you find your pattern.
+1. Sometimes you may need to show that some element or pattern in your DNA sequence is significant and not present by chance. One way to do this is to create 10s of thousands of shuffled sequences and see how many times you find your pattern.  
   
-  Write a script that can create one shuffled sequence.  
+  Write a script that will create one shuffled sequence.  
     - Read about the ([Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)) 
     - Use a `for` loop to perform the following procedure N times (N = length of seq)
     - Select a random position A with `randrange()`
@@ -147,7 +147,7 @@ ATGGGCCC
     - Print the final shuffled sequence
     - Remember to test your code with test data. 
 
-4. How similar are two sequences? To determine this, calculate sequence identity:
+2. How similar are two sequences? To determine this, calculate sequence identity:
     - Start with 2 very similar DNA sequences. Use your favorites or use [Python_04.fasta](https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/Python_04.fasta)
     - Align with [ClustalOmega](https://www.ebi.ac.uk/jdispatcher/msa/clustalo), [TCoffee](https://tcoffee.crg.eu/), [MAFFT](https://mafft.cbrc.jp/alignment/server/index.html), or some other web alignment application. 
     - Output should be in FASTA format.
