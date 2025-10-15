@@ -159,7 +159,7 @@ ATGGGCCC
 6. A new Restriction Fragments script:
       
  EcoRI restriction enzyme cutter illustration:  
- ![EcoRI](../images/ecor1-labxchange.png)  
+ [![EcoRI](../images/ecor1-labxchange.png) ](https://www.labxchange.org/library/items/lb:LabXchange:adb21ebe:lx_image:1) 
  
    - Find [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) in this DNA sequence:  
     
