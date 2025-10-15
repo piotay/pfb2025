@@ -116,7 +116,7 @@ You are going to generate gene lists and then compare the gene lists. We want to
 _Get all genes:_
 
 1. Go to [Ensembl Biomart](http://useast.ensembl.org/biomart/martview).
-2. In dropdown box, select "Ensembl Genes 113"  (or most current version)
+2. In dropdown box, select "Ensembl Genes 115"  (or most current version)
 3. In dropdown box, select "Ferret Genes" 
 4. On the left, click Attributes
 5. Expand GENE:
