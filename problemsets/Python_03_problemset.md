@@ -23,7 +23,7 @@ GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACC
   
 5. As you write scripts make sure to commit your work along the way. You can wait until the end to push them to your remote repo, or you can do it now. It is probably smart to commit after each problem set question.
    
-6. Write out the steps, in prose, that you will do to count the number of A's, T's, C's, and G's regardless of case. These can become comments. Start with:
+6. Write out the steps, in prose, that you will do to count the number of A's, T's, C's, and G's regardless of case. These can become comments. Start with:  
    \# create a variable that stores a string that represents a DNA sequence.  
    \# do something about the case of the nucleotide characters  
    \# count A's  
@@ -138,7 +138,7 @@ To read more about reverse complements and to test your output see [Qiagen's pag
 > ```
 ___  
 
-You will be writing a script to generate and print the reverse complement of a nucleotide sequence. Write out the steps you will take in prose. These can become comments. Start with  
+You will be writing a script to generate and print the reverse complement of a nucleotide sequence. Write out the steps you will take in prose. These can become comments. Start with    
   
    \# create a variable that stores a string that represents a DNA sequence.  
    \# fill in the rest of the steps.    
