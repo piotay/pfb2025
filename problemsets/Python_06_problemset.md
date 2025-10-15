@@ -111,6 +111,7 @@ Things to keep in mind:
 
 __Generate Gene Lists:__
 
+You are going to generate gene lists and then compare the gene lists. We want to know what genes are both stem cell proliferation genes AND transcription factors. To do this you are going to use Biomart to 1) create a list of all the genes of one species 2) get genes that have been curated as being involved in stem cell proliferation ( tagged with the Gene Ontology term for stem cell proliferation ), 3) get genes that are transcription factors ( tagged with Gene ontology terms for transcription factors). Then you will write a script that using sets to compare the lists. 
 
 _Get all genes:_
 
@@ -160,12 +161,13 @@ __Now, let do it again with transciption factors.__
 6. Export all results to "File" "TSV" --> GO
 7. Rename the file to "ferret_transcriptionFactors.tsv"
 
-__Open these two files: 1) the transcription factor gene list file and 2) the cell proliferation gene list file. Add each to a Set, One Set per file__
+Write a script that creates sets for these lists to find all the genes that are both transcription factors and are involved in stem cell proliferation.  
+  - Open the these files: 1) the transcription factor gene list file and 2) the cell proliferation gene list file.
+  - Add each to a Set, One Set per file
+  - Identify all the genes that are transcription factors and are involved in stem cell proliferation.
 
-A. Find all the genes that are transcription factors for cell proliferation
 
-
-__Now do the same on the command line with `comm` command. You might need to `sort` each file first.__
+Now do the same on the command line with `comm` command. You might need to `sort` each file first.
 
 Are you still committing your files as you go?
 
