@@ -93,7 +93,7 @@ Python 4 Problem Set -- Lists and Loops
     -  Do the same as above to create a new list
     -  Add an `if` so that only odd numbers are added to the list
      
-13. Lists, for loops, and strings: **Create a script**  
+13. Lists, for loops, and strings: **Create a script**, start with writing out your steps as comments.    
    - Create a list with the following data:
       `['ATGCCCGGCCCGGC','GCGTGCTAGCAATACGATAAACCGG', 'ATATATATCGAT','ATGGGCCC']`
    - Use a `for` loop to iterate through each element of this list
@@ -113,8 +113,18 @@ Python 4 Problem Set -- Lists and Loops
    3	8	ATGGGCCC
    ```
 
+  - Now, sort your list of DNA fragments by size, longest to shortest, and print them out. Your ouput should represent what you would see after performing electrophoresis on an agarose gel.
 
+	![ladder](../images/ladder.png)
+	
+  The output will loook like this
 
+```  
+GCGTGCTAGCAATACGATAAACCGG
+ATGCCCGGCCCGGC
+ATATATATCGAT
+ATGGGCCC
+```
    
 14. Have you been committing you work?
 
@@ -126,7 +136,10 @@ Python 4 Problem Set -- Lists and Loops
 -----------------
 -----------------
 
-1. Create a shuffled sequence ([Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle))
+1. Sometimes you may need to show that some element or pattern in your DNA sequence is significant and not present by chance. One way to do this is to create 10s of thousands of shuffled sequences and see how many times you find your pattern.  
+  
+  Write a script that will create one shuffled sequence.  
+    - Read about the ([Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)) 
     - Use a `for` loop to perform the following procedure N times (N = length of seq)
     - Select a random position A with `randrange()`
     - Select a random position B with `randrange()`
@@ -134,7 +147,8 @@ Python 4 Problem Set -- Lists and Loops
     - Print the final shuffled sequence
     - Remember to test your code with test data. 
 
-2. Calculate sequence identity: Start with 2 very similar DNA sequences. Use your favorites or use [Python_04.fasta](https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/Python_04.fasta)
+2. How similar are two sequences? To determine this, calculate sequence identity:
+    - Start with 2 very similar DNA sequences. Use your favorites or use [Python_04.fasta](https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/Python_04.fasta)
     - Align with [ClustalOmega](https://www.ebi.ac.uk/jdispatcher/msa/clustalo), [TCoffee](https://tcoffee.crg.eu/), [MAFFT](https://mafft.cbrc.jp/alignment/server/index.html), or some other web alignment application. 
     - Output should be in FASTA format.
     - Store (copy and paste) each aligned sequence, including dashes, as two separate string variables. 
@@ -142,8 +156,13 @@ Python 4 Problem Set -- Lists and Loops
     - Use a `for` loop with `range()` to compare each index for nucleotide differences.
     - Report percent identity of the two sequences.
 
-3. A new Restriction Fragments script:
-   - Find [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) in this DNA sequence
+6. A new Restriction Fragments script:
+      
+ EcoRI restriction enzyme cutter illustration:  
+ [![EcoRI](../images/ecor1-labxchange.png) ](https://www.labxchange.org/library/items/lb:LabXchange:adb21ebe:lx_image:1) 
+ 
+   - Find [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) in this DNA sequence:  
+    
 ```
 GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCGTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCGCTACGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGGTCATCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGAC
 ```
@@ -153,4 +172,4 @@ GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACC
       - the start position in the original sequence
       - the end position in the original sequence
       - the length of each fragemnt
-   - sort the fragments by length and print out as they would appear on a agrose gel. (big to little)
+   - sort the fragments by length and print out as they would appear after electrophoresis on a agrose gel. (big to little)

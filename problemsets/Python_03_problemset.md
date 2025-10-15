@@ -47,7 +47,7 @@ The above sequence has these counts, check your output:
 7. __Representing DNA as RNA__
 
 Canonically, when double-stranded DNA is transcribed into a single stranded RNA molecule, the resulting mRNA sequence is equivalant to coding DNA nucleotides from the forward strand with the T's changed to U's. 
- ![image from Khan Academy](../images/overview_transcription.png)
+ [![image from Khan Academy](../images/overview_transcription.png)](https://www.khanacademy.org/science/biology/biotech-dna-technology/dna-cloning-tutorial/a/restriction-enzymes-dna-ligase)
 
 
   Write a script to find and replace all instances of 'T' with 'U' in this DNA sequence. Begin with thinking and writing down your steps.
@@ -158,8 +158,9 @@ AGCGCTCATGGTGGGGGCAGCGCCTCACAACCTCCGTCATGTGCTGTGACTGCTTGTAGATGGCCATGGCGCGGACGCGG
 Now, do this again, but maintain the original text capitalization. 
 
 
-14. EcoRI is a restriction enzyme that cuts a specific paladromic double stranded DNA sequence, `GAATTC`, on both strands between the G and the A, resulting in single-stranded staggered overhangs: 
-    ![https://en.wikipedia.org/wiki/EcoRI](../images/2880px-EcoRI_restriction_enzyme_recognition_site.svg.png)
+14. EcoRI is a restriction enzyme that cuts a specific paladromic double stranded DNA sequence, `GAATTC`, on both strands between the G and the A, resulting in single-stranded staggered overhangs:
+   
+    ![ecor1](../images/ecor1-khan.png)
 
      Write a script to find the starting nucleotide position of an [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) `GAATTC` site in the forward strand of the below DNA sequence. Remember DNA sequences start with a 1 and a python string starts with an index of 0. Run with test data first.
 
@@ -178,6 +179,6 @@ With the above sequence you should get:
 ```text
 startPos:396 endPos:402
 ```
-
+Now find the EcoRI site in the opposite strand. What do you need to do the sequence to generate the opposite strand?
 
 15. ADD/COMMIT/PUSH
