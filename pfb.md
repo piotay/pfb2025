@@ -4,6 +4,11 @@
 # Python 1
 
 
+## Offical Python Documentation
+
+The Python Software Foundation publishes the 
+[official documentation](https://docs.python.org) for all versions of Python.
+
 ## Python Overview
 
 Python is a scripting language. It is useful for writing medium-sized scientific coding projects. When you run a Python script, the Python program will generate byte code and interpret the byte code. This happens automatically and you don't have to worry about it. Compiled languages like C and C++ will run much faster, but are much much more complicated to program. Languages like Java (which also gets compiled into byte code) are well suited to very large collaborative programming projects, but don't run as fast as C and are more complex that Python.
@@ -25,6 +30,7 @@ Python has
 **Classes** are a way to encapsulate (organize) variables and functions. Objects get their variables and methods from the class they belong to. 
 
 **Methods** are just functions that belong to a class. Objects that belong to the a class can use methods from that class.
+
 
 ## Running Python
 
