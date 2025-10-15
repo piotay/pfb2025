@@ -21,7 +21,7 @@ GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACC
     - Convert the contents of 'bird' to be uppercase and print
     - **Exit the interpreter**
   
-5. As you write scripts make sure to commit your work along the way. You can wait until the end to push them to your remote repo, or you can do it now. It is probably smart to commit after each problem set question.
+5. Remember that from here on out as you write scripts make sure to commit your work along the way. You can wait until the end to push them to your remote repo, or you can do it now. It is probably smart to commit after each problem set question.
    
 6. Write out the steps, in prose, that you will do to count the number of A's, T's, C's, and G's regardless of case. These can become comments. Start with:  
    \# create a variable that stores a string that represents a DNA sequence.  
