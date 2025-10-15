@@ -71,13 +71,12 @@ the result should be:
 GAUGGGAUUGGGGUUUUCCCCUCCCAUGUGCUCAAGACUGGCGCUAAAAGUUUUGAGCUUCUCAAAAGUCUAGAGCCACCGUCCAGGGAGCAGGUAGCUGCUGGGCUCCGGGGACACUUUGCGUUCGGGCUGGGAGCGUGCUUUCCACGACGGUGACACGCUUCCCUGGAUUGGCAGCCAGACUGCCUUCCGGGUCACUGCCAUGGAGGAGCCGCAGUCAGAUCCUAGCGUCGAGCCCCCUCUGAGUCAGGAAACAUUUUCAGACCUAUGGAAACUACUUCCUGAAAACAACGUUCUGUCCCCCUUGCCGUCCCAAGCAAUGGAUGAUUUGAUGCUGUCCCCGGACGAUAUUGAACAAUGGUUCACUGAAGACCCAGGUCCAGAUGAAGCUCCCAGAAUUCGCCAGAGGCUGCUCCCCCCGUGGCCCCUGCACCAGCAGCUCCUACACCGGCGGCCCCUGCACCAGCCCCCUCCUGGCCCCUGUCAUCUUCUGUCCCUUCCCAGAAAACCUACCAGGGCAGCUACGGUUUCCGUCUGGGCUUCUUGCAUUCUGGGACAGCCAAGUCUGUGACUUGCACGUACUCCCCUGCCCUCAACAAGAUGUUUUGCCAACUGGCCAAGACCUGCCCUGUGCAGCUGUGGGUUGAUUCCACACCCCCGCCCGGCACCCGCGUCCGCGCCAUGGCCAUCUACAAGCAGUCACAGCACAUGACGGAGGUUGUGAGGCGCUGCCCCCACCAUGAGCGCU
 ```
 
-9. **Calculating GC content of DNA**: GC content can be informative for many reasons. One is that the genomes of different organisms do not have the same GC content.  Read more at [WikiPedia](https://en.wikipedia.org/wiki/GC-content). Coding and non-coding regions within an organism have different GC content as well. 
+9. **Calculating GC content of DNA**: GC content is the **proportion** of bases that are either G or C.  GC content can be informative for many reasons. One is that the genomes of different organisms do not have the same GC content.  Read more at [WikiPedia](https://en.wikipedia.org/wiki/GC-content). Coding and non-coding regions within an organism have different GC content as well. 
 
 ![PMID:20530252](../images/gc-content.jpg)
     
 In a script write out your steps as comments to calculates the GC content in the DNA string below. Fill in with code.
 
->GC content is the **proportion** of bases that are either G or C.  
 >It is ALWAYS a good idea to test your code with test data.  
 >For example, the below sequence is long and you don't know for sure how many Gs and Cs are present.  
 >Test your code with a DNA string that you KNOW the correct answer.  
