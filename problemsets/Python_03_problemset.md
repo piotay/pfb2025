@@ -21,18 +21,18 @@ GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACC
     - Convert the contents of 'bird' to be uppercase and print
     - **Exit the interpreter**
   
-5. As you write scripts make sure to commit your work along the way. You can wait until the end to push them to your remote repo, or you can do it now. It is probably smart to commit after each problem set question.
+5. Remember that from here on out as you write scripts make sure to commit your work along the way. You can wait until the end to push them to your remote repo, or you can do it now. It is probably smart to commit after each problem set question.
    
-6. Write out the steps, in prose, that you will to count the number of A's, T's, C's, and G's regardless of case. These can become comments. Start with:
+6. Write out the steps, in prose, that you will do to count the number of A's, T's, C's, and G's regardless of case. These can become comments. Start with:  
    \# create a variable that stores a string that represents a DNA sequence.  
    \# do something about the case of the nucleotide characters  
    \# count A's  
    \# fill in the rest of the steps
    
-7.  Continue writing your **script with a text editor** that counts the number of A's, T's, C's, and G's regardless of case:  
-   a. Create a short string with a known composition of nucleotides, for example, 'ATTGGGCCCC' A=1, T=2, G=3, C=4. This is a positive control.  
-   b. Test your script by running with the positive control.  
-   c. Run with this unknown/experimental sequence:  
+7. Continue writing your **script with a text editor** that counts the number of A's, T's, C's, and G's regardless of case:  
+   a. Create a _positive control_, a short string with a known composition of nucleotides, for example, 'ATTGGGCCCC' A=1, T=2, G=3, C=4.  
+   b. Test your script by running with the _positive control_.  
+   c. Run with this sequence of unknown composition:  
 ```
 GATGGGATTggggttttccccTCCCATGTGCTCAAGACTGGCGCTaaaaGttttGAGCTTCTCaaaaGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCggggACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGccccCTCTGAGTCAGGAAACAttttCAGACCTATGGAAACTACTTCCTGaaaaCAACGTTCTGTccccCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTccccGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTccccCCGTGGccccTGCACCAGCAGCTCCTACACCGGCGGccccTGCACCAGccccCTCCTGGccccTGTCATCTTCTGTCCCTTCCCAGaaaaCCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTccccTGCCCTCAACAAGATGttttGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACAccccCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGccccCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGccccTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACttttCG
 ```
@@ -49,9 +49,11 @@ The above sequence has these counts, check your output:
 Canonically, when double-stranded DNA is transcribed into a single stranded RNA molecule, the resulting mRNA sequence is equivalant to coding DNA nucleotides from the forward strand with the T's changed to U's. 
  ![image from Khan Academy](../images/overview_transcription.png)
 
+
   Write a script to find and replace all instances of 'T' with 'U' in this DNA sequence. Begin with thinking and writing down your steps.
   - Start with this small test sequence (i.e., positive control): `ATGCATGC`
   - The test should return `AUGCAUGC`
+
   - Now run your code with this DNA sequence:
 ```
 GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCG
@@ -71,13 +73,17 @@ the result should be:
 GAUGGGAUUGGGGUUUUCCCCUCCCAUGUGCUCAAGACUGGCGCUAAAAGUUUUGAGCUUCUCAAAAGUCUAGAGCCACCGUCCAGGGAGCAGGUAGCUGCUGGGCUCCGGGGACACUUUGCGUUCGGGCUGGGAGCGUGCUUUCCACGACGGUGACACGCUUCCCUGGAUUGGCAGCCAGACUGCCUUCCGGGUCACUGCCAUGGAGGAGCCGCAGUCAGAUCCUAGCGUCGAGCCCCCUCUGAGUCAGGAAACAUUUUCAGACCUAUGGAAACUACUUCCUGAAAACAACGUUCUGUCCCCCUUGCCGUCCCAAGCAAUGGAUGAUUUGAUGCUGUCCCCGGACGAUAUUGAACAAUGGUUCACUGAAGACCCAGGUCCAGAUGAAGCUCCCAGAAUUCGCCAGAGGCUGCUCCCCCCGUGGCCCCUGCACCAGCAGCUCCUACACCGGCGGCCCCUGCACCAGCCCCCUCCUGGCCCCUGUCAUCUUCUGUCCCUUCCCAGAAAACCUACCAGGGCAGCUACGGUUUCCGUCUGGGCUUCUUGCAUUCUGGGACAGCCAAGUCUGUGACUUGCACGUACUCCCCUGCCCUCAACAAGAUGUUUUGCCAACUGGCCAAGACCUGCCCUGUGCAGCUGUGGGUUGAUUCCACACCCCCGCCCGGCACCCGCGUCCGCGCCAUGGCCAUCUACAAGCAGUCACAGCACAUGACGGAGGUUGUGAGGCGCUGCCCCCACCAUGAGCGCU
 ```
 
-9. Write a script that calculates the AT content in the DNA string below.  
-AT content is the **proportion** of bases that are either A or T.  
-It is ALWAYS a good idea to test your code with test data.  
-For example, the below sequence is long and you don't know for sure how many As and Ts are present.  
-Test your code with a DNA string that you KNOW the correct answer.  
-In 'AATTGGCCA' you know you have 3 As and 2 Ts.  
-Add code to calculate the GC content in addition to the AT content.  
+9. **Calculating GC content of DNA**: GC content is the **proportion** of bases that are either G or C.  GC content can be informative for many reasons. One is that the genomes of different organisms do not have the same GC content.  Read more at [WikiPedia](https://en.wikipedia.org/wiki/GC-content). Coding and non-coding regions within an organism have different GC content as well. 
+
+![PMID:20530252](../images/gc-content.jpg)
+    
+In a script write out your steps as comments to calculates the GC content in the DNA string below. Fill in with code.
+
+>It is ALWAYS a good idea to test your code with test data.  
+>For example, the below sequence is long and you don't know for sure how many Gs and Cs are present.  
+>Test your code with a DNA string that you KNOW the correct answer.  
+>In 'AATTGGCCA' you know you have 2 Gs and 2 Cs.  
+>Add code to calculate the AT content in addition to the GC content.  
 
 ```
 GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCG
@@ -109,7 +115,7 @@ GCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCC
 Test other sequence inputs and the resulting subsequences with the [Sequence Manipulation Site](https://www.bioinformatics.org/sms2/range_extract_dna.html?)  
 
 
-12. Now use this DNA sequence and calculate the GC content in your substring (from 100 to 200, like above) but it should be regardless of case:
+12. Now use this DNA sequence in a case insensitive way to calculate the GC content in your substring (from 100 to 200, like above). Write out your steps then the code.
 ```
 GATGGGATTggggttttccccTCCCATGTGCTCAAGACTGGCGCTaaaaGttttGAGCTTCTCaaaaGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCggggACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGccccCTCTGAGTCAGGAAACAttttCAGACCTATGGAAACTACTTCCTGaaaaCAACGTTCTGTccccCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTccccGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTccccCCGTGGccccTGCACCAGCAGCTCCTACACCGGCGGccccTGCACCAGccccCTCCTGGccccTGTCATCTTCTGTCCCTTCCCAGaaaaCCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTccccTGCCCTCAACAAGATGttttGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACAccccCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGccccCACCATGAGCGCT
 ```
@@ -133,7 +139,7 @@ To read more about reverse complements and to test your output see [Qiagen's pag
 > ```
 ___  
 
-You will be writing a script to generate and print the reverse complement of a nucleotide sequence. Write out the steps you will take in prose. These can become comments. Start with  
+You will be writing a script to generate and print the reverse complement of a nucleotide sequence. Write out the steps you will take in prose. These can become comments. Start with    
   
    \# create a variable that stores a string that represents a DNA sequence.  
    \# fill in the rest of the steps.    
@@ -149,14 +155,13 @@ The resulting reverse complement sequence should be:
 ```text
 AGCGCTCATGGTGGGGGCAGCGCCTCACAACCTCCGTCATGTGCTGTGACTGCTTGTAGATGGCCATGGCGCGGACGCGGGTGCCGGGCGGGGGTGTGGAATCAACCCACAGCTGCACAGGGCAGGTCTTGGCCAGTTGGCAAAACATCTTGTTGAGGGCAGGGGAGTACGTGCAAGTCACAGACTTGGCTGTCCCAGAATGCAAGAAGCCCAGACGGAAACCGTAGCTGCCCTGGTAGGTTTTCTGGGAAGGGACAGAAGATGACAGGGGCCAGGAGGGGGCTGGTGCAGGGGCCGCCGGTGTAGGAGCTGCTGGTGCAGGGGCCACGGGGGGAGCAGCCTCTGGCGAATTCTGGGAGCTTCATCTGGACCTGGGTCTTCAGTGAACCATTGTTCAATATCGTCCGGGGACAGCATCAAATCATCCATTGCTTGGGACGGCAAGGGGGACAGAACGTTGTTTTCAGGAAGTAGTTTCCATAGGTCTGAAAATGTTTCCTGACTCAGAGGGGGCTCGACGCTAGGATCTGACTGCGGCTCCTCCATGGCAGTGACCCGGAAGGCAGTCTGGCTGCCAATCCAGGGAAGCGTGTCACCGTCGTGGAAAGCACGCTCCCAGCCCGAACGCAAAGTGTCCCCGGAGCCCAGCAGCTACCTGCTCCCTGGACGGTGGCTCTAGACTTTTGAGAAGCTCAAAACTTTTAGCGCCAGTCTTGAGCACATGGGAGGGGAAAACCCCAATCCCATC
 ```
-
-
+Now, do this again, but maintain the original text capitalization. 
 
 
 14. EcoRI is a restriction enzyme that cuts a specific paladromic double stranded DNA sequence, `GAATTC`, on both strands between the G and the A, resulting in single-stranded staggered overhangs: 
     ![https://en.wikipedia.org/wiki/EcoRI](../images/2880px-EcoRI_restriction_enzyme_recognition_site.svg.png)
 
-     Write a script to find the starting nucleotide position of an [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) `GAATTC` site in the below DNA sequence. Remember DNA sequences start with a 1 and a python string starts with an index of 0. Run with test data first.
+     Write a script to find the starting nucleotide position of an [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) `GAATTC` site in the forward strand of the below DNA sequence. Remember DNA sequences start with a 1 and a python string starts with an index of 0. Run with test data first.
 
 ```
 GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCG
