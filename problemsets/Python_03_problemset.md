@@ -47,7 +47,7 @@ The above sequence has these counts, check your output:
 7. __Representing DNA as RNA__
 
 Canonically, when double-stranded DNA is transcribed into a single stranded RNA molecule, the resulting mRNA sequence is equivalant to coding DNA nucleotides from the forward strand with the T's changed to U's. 
- ![image from Khan Academy](../images/overview_transcription.png)
+ [![image from Khan Academy](../images/overview_transcription.png)](https://www.khanacademy.org/science/biology/biotech-dna-technology/dna-cloning-tutorial/a/restriction-enzymes-dna-ligase)
 
 
   Write a script to find and replace all instances of 'T' with 'U' in this DNA sequence. Begin with thinking and writing down your steps.
