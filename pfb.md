@@ -2592,11 +2592,6 @@ TP53 AAATT
 
 Sort by the length we will see later in the Functions lecture
 
----
-## [Link to Python 5 Problem Set](problemsets/Python_05_problemset.md)
-
-
----
 
 
 
@@ -2783,14 +2778,10 @@ nt count: {'G': 20, 'T': 21, 'A': 13, 'C': 16, 'N': 1}
 ```
 > We have the count for all NTs even ones we might not expect.
 
+
 ---
 
-`set` problemset questions are combined into Python 6: File I/O problemset.     
-
-## [Link to Python 6 Problem Set](problemsets/Python_06_problemset.md)   
-Question 1-5 are all about Sets.  
-Question 6+ are a combination of File I/O and sets.  
-
+## [Link to Python 5 Problem Set](problemsets/Python_05_problemset.md)
 
 ---
 
