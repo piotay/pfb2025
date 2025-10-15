@@ -158,8 +158,9 @@ AGCGCTCATGGTGGGGGCAGCGCCTCACAACCTCCGTCATGTGCTGTGACTGCTTGTAGATGGCCATGGCGCGGACGCGG
 Now, do this again, but maintain the original text capitalization. 
 
 
-14. EcoRI is a restriction enzyme that cuts a specific paladromic double stranded DNA sequence, `GAATTC`, on both strands between the G and the A, resulting in single-stranded staggered overhangs: 
-    ![https://en.wikipedia.org/wiki/EcoRI](../images/2880px-EcoRI_restriction_enzyme_recognition_site.svg.png)
+14. EcoRI is a restriction enzyme that cuts a specific paladromic double stranded DNA sequence, `GAATTC`, on both strands between the G and the A, resulting in single-stranded staggered overhangs:
+   
+    ![ecor1](../images/ecor1-khan.png)
 
      Write a script to find the starting nucleotide position of an [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) `GAATTC` site in the forward strand of the below DNA sequence. Remember DNA sequences start with a 1 and a python string starts with an index of 0. Run with test data first.
 
