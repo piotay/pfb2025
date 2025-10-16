@@ -177,7 +177,7 @@ EcoRI startPos:yourStartPos endPos:yourEndPos
 
 With the above sequence you should get:
 ```text
-startPos:396 endPos:402
+startPos:396 endPos:401
 ```
 Now find the EcoRI site in the opposite strand. What do you need to do the sequence to generate the opposite strand?
 
